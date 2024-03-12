@@ -140,7 +140,7 @@ const OpenAI: ModelProviderCard = {
       vision: true,
     },
     {
-      displayName: 'Bing-3.5-net',
+      displayName: 'Bing-3.5-Net',
       hidden: true,
       id: 'gpt-3.5-bing',
       tokens: 4096,

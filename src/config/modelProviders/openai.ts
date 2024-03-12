@@ -109,6 +109,7 @@ const OpenAI: ModelProviderCard = {
       tokens: 32_768,
     },
     {
+      displayName: 'Moonshot-v1-vision',
       files: true,
       hidden: true,
       id: 'moonshot-v1-vision',
@@ -116,13 +117,14 @@ const OpenAI: ModelProviderCard = {
       vision: true,
     },
     {
+      displayName: 'Moonshot-v1',
       hidden: true,
       id: 'moonshot-v1',
       tokens: 32_768,
       vision: true,
     },
     {
-      displayName: 'GPT-Coze-3.5 Net',
+      displayName: 'Coze GPT-3.5-Net',
       files: true,
       hidden: true,
       id: 'gpt-3.5-coze',
@@ -130,7 +132,7 @@ const OpenAI: ModelProviderCard = {
       vision: true,
     },
     {
-      displayName: 'GPT-Coze-4 Net',
+      displayName: 'Coze GPT-4-Net',
       files: true,
       hidden: true,
       id: 'gpt-4-coze',
@@ -138,21 +140,21 @@ const OpenAI: ModelProviderCard = {
       vision: true,
     },
     {
-      displayName: 'GPT-bing-3.5 Net',
+      displayName: 'Bing GPT-3.5-net',
       hidden: true,
       id: 'gpt-3.5-bing',
       tokens: 4096,
       vision: true,
     },
     {
-      displayName: 'GPT-bing-4 Turbo',
+      displayName: 'Bing GPT-4-Turbo',
       hidden: true,
       id: 'gpt-4-turbo-bing',
       tokens: 8192,
       vision: true,
     },
     {
-      displayName: 'GPT-bing-4 32k',
+      displayName: 'Bing GPT-4-32k',
       hidden: true,
       id: 'gpt-4-32k-bing',
       tokens: 32_768,

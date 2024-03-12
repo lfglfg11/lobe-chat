@@ -113,14 +113,14 @@ const OpenAI: ModelProviderCard = {
       files: true,
       hidden: true,
       id: 'moonshot-v1-vision',
-      tokens: 32_768,
+      tokens: 8192,
       vision: true,
     },
     {
       displayName: 'Moonshot-v1',
       hidden: true,
       id: 'moonshot-v1',
-      tokens: 32_768,
+      tokens: 8192,
       vision: true,
     },
     {
@@ -128,7 +128,7 @@ const OpenAI: ModelProviderCard = {
       files: true,
       hidden: true,
       id: 'gpt-3.5-coze',
-      tokens: 32_768,
+      tokens: 4096,
       vision: true,
     },
     {
@@ -136,7 +136,7 @@ const OpenAI: ModelProviderCard = {
       files: true,
       hidden: true,
       id: 'gpt-4-coze',
-      tokens: 32_768,
+      tokens: 4096,
       vision: true,
     },
     {

@@ -11,6 +11,12 @@ const OpenAI: ModelProviderCard = {
       tokens: 16_385,
     },
     {
+      displayName: 'GPT-4',
+      hidden: true,
+      id: 'gpt-4',
+      tokens: 8192,
+    },
+    {
       displayName: 'GPT-3.5 Turbo (0125)',
       functionCall: true,
       hidden: true,
@@ -61,13 +67,6 @@ const OpenAI: ModelProviderCard = {
       tokens: 128_000,
     },
     {
-      description: 'GPT-4 视觉预览版，支持视觉任务',
-      displayName: 'GPT-4 Vision Preview',
-      id: 'gpt-4-vision-preview',
-      tokens: 128_000,
-      vision: true,
-    },
-    {
       displayName: 'GPT-4 Turbo Preview (1106)',
       hidden: true,
       id: 'gpt-4-1106-preview',
@@ -88,10 +87,11 @@ const OpenAI: ModelProviderCard = {
       tokens: 32_768,
     },
     {
-      displayName: 'GPT-4',
-      hidden: true,
-      id: 'gpt-4',
-      tokens: 8192,
+      description: 'GPT-4 视觉预览版，支持视觉任务',
+      displayName: 'GPT-4 Vision Preview',
+      id: 'gpt-4-vision-preview',
+      tokens: 128_000,
+      vision: true,
     },
     {
       hidden: true,
@@ -109,6 +109,13 @@ const OpenAI: ModelProviderCard = {
       tokens: 32_768,
     },
     {
+      displayName: 'Moonshot-v1',
+      hidden: true,
+      id: 'moonshot-v1',
+      tokens: 8192,
+      vision: true,
+    },
+    {
       displayName: 'Moonshot-v1-vision',
       files: true,
       hidden: true,
@@ -117,14 +124,7 @@ const OpenAI: ModelProviderCard = {
       vision: true,
     },
     {
-      displayName: 'Moonshot-v1',
-      hidden: true,
-      id: 'moonshot-v1',
-      tokens: 8192,
-      vision: true,
-    },
-    {
-      displayName: 'Coze GPT-3.5-Net',
+      displayName: 'Coze-3.5-Net',
       files: true,
       hidden: true,
       id: 'gpt-3.5-coze',
@@ -132,7 +132,7 @@ const OpenAI: ModelProviderCard = {
       vision: true,
     },
     {
-      displayName: 'Coze GPT-4-Net',
+      displayName: 'Coze-4-Net',
       files: true,
       hidden: true,
       id: 'gpt-4-coze',
@@ -140,21 +140,21 @@ const OpenAI: ModelProviderCard = {
       vision: true,
     },
     {
-      displayName: 'Bing GPT-3.5-net',
+      displayName: 'Bing-3.5-net',
       hidden: true,
       id: 'gpt-3.5-bing',
       tokens: 4096,
       vision: true,
     },
     {
-      displayName: 'Bing GPT-4-Turbo',
+      displayName: 'Bing-4-Turbo',
       hidden: true,
       id: 'gpt-4-turbo-bing',
       tokens: 8192,
       vision: true,
     },
     {
-      displayName: 'Bing GPT-4-32k',
+      displayName: 'Bing-4-32k',
       hidden: true,
       id: 'gpt-4-32k-bing',
       tokens: 32_768,

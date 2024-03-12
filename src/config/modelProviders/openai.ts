@@ -62,7 +62,7 @@ const OpenAI: ModelProviderCard = {
     },
     {
       description: 'GPT-4 视觉预览版，支持视觉任务',
-      displayName: 'GPT-4 Turbo Vision Preview',
+      displayName: 'GPT-4 Vision Preview',
       id: 'gpt-4-vision-preview',
       tokens: 128_000,
       vision: true,
@@ -73,6 +73,22 @@ const OpenAI: ModelProviderCard = {
       hidden: true,
       id: 'gpt-4-1106-preview',
       tokens: 128_000,
+    },
+    {
+      displayName: 'GPT-4 All',
+      files: true,
+      functionCall: true,
+      hidden: true,
+      id: 'gpt-4-all',
+      tokens: 32_768,
+      vision: true,
+    },
+    {
+      displayName: 'GPT-4 Mobile',
+      functionCall: true,
+      hidden: true,
+      id: 'gpt-4-mobile',
+      tokens: 32_768,
     },
     {
       displayName: 'GPT-4',
@@ -98,14 +114,6 @@ const OpenAI: ModelProviderCard = {
       hidden: true,
       id: 'gpt-4-32k-0613',
       tokens: 32_768,
-    },
-    {
-      files: true,
-      functionCall: true,
-      hidden: true,
-      id: 'gpt-4-all',
-      tokens: 32_768,
-      vision: true,
     },
     {
       files: true,

@@ -30,6 +30,8 @@ export interface BottomActionProps {
 const BottomActions = memo<BottomActionProps>(({ tab }) => {
   const router = useRouter();
   const { t } = useTranslation('common');
+  // 阻止更新弹窗
+  const closeNewVersion = false;
 
   const [hasNewVersion, useCheckLatestVersion] = useGlobalStore((s) => [
     s.hasNewVersion,
@@ -109,7 +111,7 @@ const BottomActions = memo<BottomActionProps>(({ tab }) => {
       key: 'setting',
       label: (
         <Flexbox align={'center'} distribution={'space-between'} gap={8} horizontal>
-          {t('setting')} {hasNewVersion && <Badge count={t('upgradeVersion.hasNew')} />}
+          {t('setting')} {hasNewVersion && closeNewVersion && <Badge count={t('upgradeVersion.hasNew')} />}
         </Flexbox>
       ),
       onClick: () => {

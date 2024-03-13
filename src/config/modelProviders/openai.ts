@@ -6,7 +6,6 @@ const OpenAI: ModelProviderCard = {
     {
       description: 'GPT 3.5 Turbo，适用于各种文本生成和理解任务',
       displayName: 'GPT-3.5 Turbo',
-      functionCall: true,
       id: 'gpt-3.5-turbo',
       tokens: 16_385,
     },
@@ -14,7 +13,7 @@ const OpenAI: ModelProviderCard = {
       displayName: 'GPT-4',
       hidden: true,
       id: 'gpt-4',
-      tokens: 8192,
+      tokens: 32_768,
     },
     {
       displayName: 'GPT-3.5 Turbo (0125)',
@@ -77,14 +76,14 @@ const OpenAI: ModelProviderCard = {
       files: true,
       hidden: true,
       id: 'gpt-4-all',
-      tokens: 32_768,
+      tokens: 128_000,
       vision: true,
     },
     {
       displayName: 'GPT-4 Mobile',
       hidden: true,
       id: 'gpt-4-mobile',
-      tokens: 32_768,
+      tokens: 128_000,
     },
     {
       description: 'GPT-4 视觉预览版，支持视觉任务',
@@ -112,7 +111,7 @@ const OpenAI: ModelProviderCard = {
       displayName: 'Moonshot-v1',
       hidden: true,
       id: 'moonshot-v1',
-      tokens: 8192,
+      tokens: 32_768,
       vision: true,
     },
     {
@@ -120,7 +119,7 @@ const OpenAI: ModelProviderCard = {
       files: true,
       hidden: true,
       id: 'moonshot-v1-vision',
-      tokens: 8192,
+      tokens: 32_768,
       vision: true,
     },
     {
@@ -128,7 +127,7 @@ const OpenAI: ModelProviderCard = {
       files: true,
       hidden: true,
       id: 'gpt-3.5-coze',
-      tokens: 4096,
+      tokens: 8192,
       vision: true,
     },
     {
@@ -136,22 +135,20 @@ const OpenAI: ModelProviderCard = {
       files: true,
       hidden: true,
       id: 'gpt-4-coze',
-      tokens: 4096,
+      tokens: 8192,
       vision: true,
     },
     {
       displayName: 'Bing-3.5-Net',
       hidden: true,
       id: 'gpt-3.5-bing',
-      tokens: 4096,
-      vision: true,
+      tokens: 8192,
     },
     {
       displayName: 'Bing-4-Turbo',
       hidden: true,
       id: 'gpt-4-turbo-bing',
-      tokens: 8192,
-      vision: true,
+      tokens: 16_385,
     },
     {
       displayName: 'Bing-4-32k',

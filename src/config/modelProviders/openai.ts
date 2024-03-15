@@ -6,9 +6,14 @@ const OpenAI: ModelProviderCard = {
     {
       description: 'GPT 3.5 Turbo，适用于各种文本生成和理解任务',
       displayName: 'GPT-3.5 Turbo',
-      functionCall: true,
       id: 'gpt-3.5-turbo',
       tokens: 16_385,
+    },
+    {
+      displayName: 'GPT-4',
+      hidden: true,
+      id: 'gpt-4',
+      tokens: 32_768,
     },
     {
       displayName: 'GPT-3.5 Turbo (0125)',
@@ -64,53 +69,115 @@ const OpenAI: ModelProviderCard = {
       tokens: 128_000,
     },
     {
-      description: 'GPT-4 视觉预览版，支持视觉任务',
-      displayName: 'GPT-4 Turbo Vision Preview',
-      id: 'gpt-4-vision-preview',
-      tokens: 128_000,
-      vision: true,
-    },
-    {
       displayName: 'GPT-4 Turbo Preview (1106)',
-      functionCall: true,
       hidden: true,
       id: 'gpt-4-1106-preview',
       tokens: 128_000,
     },
     {
-      displayName: 'GPT-4',
-      functionCall: true,
+      displayName: 'GPT-4 All',
+      files: true,
       hidden: true,
-      id: 'gpt-4',
-      tokens: 8192,
+      id: 'gpt-4-all',
+      tokens: 128_000,
+      vision: true,
     },
     {
+      displayName: 'GPT-4 Mobile',
+      hidden: true,
+      id: 'gpt-4-mobile',
+      tokens: 128_000,
+    },
+    {
+      description: 'GPT-4 视觉预览版，支持视觉任务',
+      displayName: 'GPT-4 Vision Preview',
+      id: 'gpt-4-vision-preview',
+      tokens: 128_000,
+      vision: true,
+    },
+    {
+<<<<<<< HEAD
       displayName: 'GPT-4 (0613)',
       functionCall: true,
+=======
+>>>>>>> main
       hidden: true,
       id: 'gpt-4-0613',
       tokens: 8192,
     },
     {
+<<<<<<< HEAD
       displayName: 'GPT-4 32K',
       functionCall: true,
+=======
+>>>>>>> main
       hidden: true,
       id: 'gpt-4-32k',
       tokens: 32_768,
     },
     {
+<<<<<<< HEAD
       displayName: 'GPT-4 32K (0613)',
       functionCall: true,
+=======
+>>>>>>> main
       hidden: true,
       id: 'gpt-4-32k-0613',
       tokens: 32_768,
     },
     {
+<<<<<<< HEAD
       displayName: 'GPT-4 ALL',
       files: true,
       functionCall: true,
+=======
+      displayName: 'Moonshot-v1',
+>>>>>>> main
       hidden: true,
-      id: 'gpt-4-all',
+      id: 'moonshot-v1',
+      tokens: 32_768,
+      vision: true,
+    },
+    {
+      displayName: 'Moonshot-v1-vision',
+      files: true,
+      hidden: true,
+      id: 'moonshot-v1-vision',
+      tokens: 32_768,
+      vision: true,
+    },
+    {
+      displayName: 'Coze-3.5-Net',
+      files: true,
+      hidden: true,
+      id: 'gpt-3.5-coze',
+      tokens: 8192,
+      vision: true,
+    },
+    {
+      displayName: 'Coze-4-Net',
+      files: true,
+      hidden: true,
+      id: 'gpt-4-coze',
+      tokens: 8192,
+      vision: true,
+    },
+    {
+      displayName: 'Bing-3.5-Net',
+      hidden: true,
+      id: 'gpt-3.5-bing',
+      tokens: 8192,
+    },
+    {
+      displayName: 'Bing-4-Turbo',
+      hidden: true,
+      id: 'gpt-4-turbo-bing',
+      tokens: 16_385,
+    },
+    {
+      displayName: 'Bing-4-32k',
+      hidden: true,
+      id: 'gpt-4-32k-bing',
       tokens: 32_768,
       vision: true,
     },

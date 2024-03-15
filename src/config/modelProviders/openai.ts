@@ -96,43 +96,22 @@ const OpenAI: ModelProviderCard = {
       vision: true,
     },
     {
-<<<<<<< HEAD
-      displayName: 'GPT-4 (0613)',
-      functionCall: true,
-=======
->>>>>>> main
       hidden: true,
       id: 'gpt-4-0613',
       tokens: 8192,
     },
     {
-<<<<<<< HEAD
-      displayName: 'GPT-4 32K',
-      functionCall: true,
-=======
->>>>>>> main
       hidden: true,
       id: 'gpt-4-32k',
       tokens: 32_768,
     },
     {
-<<<<<<< HEAD
-      displayName: 'GPT-4 32K (0613)',
-      functionCall: true,
-=======
->>>>>>> main
       hidden: true,
       id: 'gpt-4-32k-0613',
       tokens: 32_768,
     },
     {
-<<<<<<< HEAD
-      displayName: 'GPT-4 ALL',
-      files: true,
-      functionCall: true,
-=======
       displayName: 'Moonshot-v1',
->>>>>>> main
       hidden: true,
       id: 'moonshot-v1',
       tokens: 32_768,

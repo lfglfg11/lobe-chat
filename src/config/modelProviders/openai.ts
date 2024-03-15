@@ -30,6 +30,7 @@ const OpenAI: ModelProviderCard = {
       tokens: 16_385,
     },
     {
+      displayName: 'GPT-3.5 Turbo Instruct',
       hidden: true,
       id: 'gpt-3.5-turbo-instruct',
       tokens: 4096,
@@ -41,12 +42,14 @@ const OpenAI: ModelProviderCard = {
       tokens: 16_385,
     },
     {
+      displayName: 'GPT-3.5 Turbo (0613)',
       hidden: true,
       id: 'gpt-3.5-turbo-0613',
       legacy: true,
       tokens: 4096,
     },
     {
+      displayName: 'GPT-3.5 Turbo 16K (0613)',
       hidden: true,
       id: 'gpt-3.5-turbo-16k-0613',
       legacy: true,

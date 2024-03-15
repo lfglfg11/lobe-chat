@@ -170,6 +170,13 @@ describe('modelProviderSelectors', () => {
       );
       expect(enabledFiles).toBeTruthy();
     });
+
+    it('should return true if the model has file ability', () => {
+      const enabledFiles = modelProviderSelectors.modelEnabledFiles('moonshot-v1-vision')(
+        useGlobalStore.getState(),
+      );
+      expect(enabledFiles).toBeTruthy();
+    });
   });
 
   describe('modelHasMaxToken', () => {

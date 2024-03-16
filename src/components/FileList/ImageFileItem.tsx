@@ -70,6 +70,7 @@ const ImageFileItem = memo<FileItemProps>(({ editable, id, alwaysShowClose }) =>
       src={data?.url}
       style={{ height: isSafari ? 'auto' : '100%' }}
       wrapperClassName={cx(styles.image, editable && styles.editableImage)}
+      onError={(e: { target: { src: string; }; }) => { e.target.src = data?.url }}
     />
   );
 });

@@ -88,13 +88,20 @@ const OpenAI: ModelProviderCard = {
       tokens: 128_000,
     },
     {
+      displayName: 'GPT-4 All',
+      files: true,
+      hidden: true,
+      id: 'gpt-4-all',
+      tokens: 128_000,
+      vision: true,
+    },
+    {
       displayName: 'Coze-4 Net',
       hidden: true,
       id: 'gpt-4-coze',
       tokens: 8192,
       vision: true,
     },
-
     {
       displayName: 'Bing-4 Net',
       hidden: true,
@@ -106,14 +113,6 @@ const OpenAI: ModelProviderCard = {
       hidden: true,
       id: 'gpt-4-32k-bing',
       tokens: 32_768,
-    },
-    {
-      displayName: 'GPT-4 All',
-      files: true,
-      hidden: true,
-      id: 'gpt-4-all',
-      tokens: 128_000,
-      vision: true,
     },
     {
       displayName: 'GPT-4 Mobile',

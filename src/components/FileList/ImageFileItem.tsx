@@ -40,6 +40,12 @@ const ImageFileItem = memo<FileItemProps>(({ editable, id, alwaysShowClose }) =>
   const { data, isLoading } = useFetchFile(id);
   const { styles, cx } = useStyles();
   const { isSafari } = usePlatform();
+  const imageFileExtensions = ['.jpg', '.jpeg', '.png', '.gif', '.bmp', '.tiff', '.ico', '.webp', '.svg', '.eps', '.raw', '.heif', '.heic'];
+
+  const isImage = (filename: string) => {
+    const extension = filename.slice((filename.lastIndexOf(".") - 1 >>> 0) + 2);
+    return imageFileExtensions.includes(`.${extension.toLowerCase()}`);
+  }
 
   const handleRemoveFile = useCallback(
     (e: any) => {
@@ -49,7 +55,7 @@ const ImageFileItem = memo<FileItemProps>(({ editable, id, alwaysShowClose }) =>
     [id],
   );
 
-  return (
+  return isImage(data?.name) ? (
     <Image
       actions={
         editable && (
@@ -70,9 +76,13 @@ const ImageFileItem = memo<FileItemProps>(({ editable, id, alwaysShowClose }) =>
       src={data?.url}
       style={{ height: isSafari ? 'auto' : '100%' }}
       wrapperClassName={cx(styles.image, editable && styles.editableImage)}
-      onError={(e: { target: { src: string; }; }) => { e.target.src = data?.url }}
     />
+  ) : (
+    <a href={data?.url} target="_blank" rel="noreferrer">
+      {data?.name}
+    </a>
   );
+
 });
 
 export default ImageFileItem;

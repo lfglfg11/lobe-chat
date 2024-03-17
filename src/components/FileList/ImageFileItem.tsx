@@ -105,13 +105,8 @@ const ImageFileItem = memo<FileItemProps>(({ editable, id, alwaysShowClose }) =>
       height={isSafari ? 'auto' : '100%'}
       isLoading={isLoading}
       size={IMAGE_SIZE as any}
-      src={data?.url}
       style={{
-        alignItems: 'center',
-        backgroundColor: 'white',
-        display: 'flex',
         height: isSafari ? 'auto' : '100%',
-        justifyContent: 'center'
       }}
       wrapperClassName={cx(styles.image, editable && styles.editableImage)}
     />

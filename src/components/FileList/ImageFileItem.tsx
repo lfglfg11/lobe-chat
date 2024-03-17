@@ -89,33 +89,46 @@ const ImageFileItem = memo<FileItemProps>(({ editable, id, alwaysShowClose }) =>
     );
   } else {
     return (
-      <Image
-        actions={
-          editable && (
-            <ActionIcon
-              className={styles.deleteButton}
-              glass
-              icon={Trash}
-              onClick={handleRemoveFile}
-              size={'small'}
-            />
-          )
-        }
-        alt={data?.name || id || ''}
-        alwaysShowActions={alwaysShowClose}
-        height={isSafari ? 'auto' : '100%'}
-        isLoading={isLoading}
-        size={IMAGE_SIZE as any}
-        src={"/images/updateFile.jpg"}
-        style={{
-          alignItems: 'center',
-          backgroundColor: 'white',
-          display: 'flex',
-          height: isSafari ? 'auto' : '100%',
-          justifyContent: 'center'
-        }}
-        wrapperClassName={cx(styles.image, editable && styles.editableImage)}
-      />
+      <div style={{ position: 'relative', display: 'inline-block' }}>
+        <Image
+          actions={
+            editable && (
+              <ActionIcon
+                className={styles.deleteButton}
+                glass
+                icon={Trash}
+                onClick={handleRemoveFile}
+                size={'small'}
+              />
+            )
+          }
+          alt={data?.name || id || ''}
+          alwaysShowActions={alwaysShowClose}
+          height={isSafari ? 'auto' : '100%'}
+          isLoading={isLoading}
+          size={IMAGE_SIZE as any}
+          src={"/images/updateFile.jpg"}
+          style={{
+            alignItems: 'center',
+            backgroundColor: 'white',
+            display: 'flex',
+            height: isSafari ? 'auto' : '100%',
+            justifyContent: 'center'
+          }}
+          wrapperClassName={cx(styles.image, editable && styles.editableImage)}
+        />
+        <div style={{
+          position: 'absolute',
+          top: '50%',
+          left: '50%',
+          transform: 'translate(-50%, -50%)',
+          color: 'black',
+          backgroundColor: 'rgba(255,255,255,0.5)',
+          padding: '10px',
+        }}>
+          data?.name || id || ''
+        </div>
+      </div>
     );
   }
 });

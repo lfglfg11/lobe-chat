@@ -55,7 +55,10 @@ const ImageFileItem = memo<FileItemProps>(({ editable, id, alwaysShowClose }) =>
     const extension = filename.slice((filename.lastIndexOf(".") - 1 >>> 0) + 2);
     return imageFileExtensions.includes(`.${extension.toLowerCase()}`);
   }
-  const isShowImage = isImage(data?.name);
+  let isShowImage = true;
+  if (data && data.name) {
+     isShowImage = isImage(data.name);
+  }  
   if (isShowImage) {
     return (
       <Image

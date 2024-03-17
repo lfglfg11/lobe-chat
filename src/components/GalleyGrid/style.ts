@@ -1,6 +1,6 @@
 import { createStyles } from 'antd-style';
 
-export const MIN_IMAGE_SIZE = 64;
+export const MIN_IMAGE_SIZE = 74;
 export const MAX_SIZE_DESKTOP = 280;
 export const MAX_SIZE_MOBILE = 160;
 export const useStyles = createStyles(

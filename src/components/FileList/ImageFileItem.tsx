@@ -88,29 +88,35 @@ const ImageFileItem = memo<FileItemProps>(({ editable, id, alwaysShowClose }) =>
       />
     );
   } else {
-    <Image
-      actions={
-        editable && (
-          <ActionIcon
-            className={styles.deleteButton}
-            glass
-            icon={Trash}
-            onClick={handleRemoveFile}
-            size={'small'}
-          />
-        )
-      }
-      alt={data?.name || id || ''}
-      alwaysShowActions={alwaysShowClose}
-      height={isSafari ? 'auto' : '100%'}
-      isLoading={isLoading}
-      size={IMAGE_SIZE as any}
-      src={"/images/updateFile.jpg"}
-      style={{
-        height: isSafari ? 'auto' : '100%',
-      }}
-      wrapperClassName={cx(styles.image, editable && styles.editableImage)}
-    />
+    return (
+      <Image
+        actions={
+          editable && (
+            <ActionIcon
+              className={styles.deleteButton}
+              glass
+              icon={Trash}
+              onClick={handleRemoveFile}
+              size={'small'}
+            />
+          )
+        }
+        alt={data?.name || id || ''}
+        alwaysShowActions={alwaysShowClose}
+        height={isSafari ? 'auto' : '100%'}
+        isLoading={isLoading}
+        size={IMAGE_SIZE as any}
+        src={"/images/updateFile.jpg"}
+        style={{
+          alignItems: 'center',
+          backgroundColor: 'white',
+          display: 'flex',
+          height: isSafari ? 'auto' : '100%',
+          justifyContent: 'center'
+        }}
+        wrapperClassName={cx(styles.image, editable && styles.editableImage)}
+      />
+    );
   }
 });
 

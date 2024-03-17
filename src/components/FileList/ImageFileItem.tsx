@@ -118,13 +118,13 @@ const ImageFileItem = memo<FileItemProps>(({ editable, id, alwaysShowClose }) =>
           wrapperClassName={cx(styles.image, editable && styles.editableImage)}
         />
         <div style={{
+          backgroundColor: 'rgba(255,255,255,0.5)',
+          color: 'black',
+          left: '50%',
+          padding: '10px',
           position: 'absolute',
           top: '50%',
-          left: '50%',
-          transform: 'translate(-50%, -50%)',
-          color: 'black',
-          backgroundColor: 'rgba(255, 255, 255, 0.5)',
-          padding: '10px'
+          transform: 'translate(-50%, -50%)'
         }}>
           {data?.name || id}
         </div>

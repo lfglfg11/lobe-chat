@@ -88,7 +88,7 @@ const ImageFileItem = memo<FileItemProps>(({ editable, id, alwaysShowClose }) =>
       />
     );
   } else {
-    <Image
+    <object
       actions={
         editable && (
           <ActionIcon
@@ -105,6 +105,7 @@ const ImageFileItem = memo<FileItemProps>(({ editable, id, alwaysShowClose }) =>
       height={isSafari ? 'auto' : '100%'}
       isLoading={isLoading}
       size={IMAGE_SIZE as any}
+      src={data?.url}
       style={{
         height: isSafari ? 'auto' : '100%',
       }}

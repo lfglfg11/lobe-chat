@@ -89,18 +89,19 @@ const ImageFileItem = memo<FileItemProps>(({ editable, id, alwaysShowClose }) =>
     );
   } else {
     return (
-      <div style={{ position: 'relative', display: 'inline-block' }} actions={
-        editable && (
-          <ActionIcon
-            className={styles.deleteButton}
-            glass
-            icon={Trash}
-            onClick={handleRemoveFile}
-            size={'small'}
-          />
-        )
-      }>
+      <div style={{ position: 'relative', display: 'inline-block' }}>
         <Image
+          actions={
+            editable && (
+              <ActionIcon
+                className={styles.deleteButton}
+                glass
+                icon={Trash}
+                onClick={handleRemoveFile}
+                size={'small'}
+              />
+            )
+          }
           alt={data?.name || id || ''}
           alwaysShowActions={alwaysShowClose}
           height={isSafari ? 'auto' : '100%'}
@@ -125,7 +126,7 @@ const ImageFileItem = memo<FileItemProps>(({ editable, id, alwaysShowClose }) =>
           backgroundColor: 'rgba(255, 255, 255, 0.5)',
           padding: '10px'
         }}>
-          {data?.name || id }
+          {data?.name || id}
         </div>
       </div>
     );

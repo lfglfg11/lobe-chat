@@ -89,7 +89,7 @@ const ImageFileItem = memo<FileItemProps>(({ editable, id, alwaysShowClose }) =>
     );
   } else {
     return (
-      <div style={{ position: 'relative', display: 'inline-block' }}>
+      <div style={{ display: 'inline-block',position: 'relative'}}>
         <Image
           actions={
             editable && (

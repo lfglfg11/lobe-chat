@@ -129,12 +129,12 @@ const ImageFileItem = memo<FileItemProps>(({ editable, id, alwaysShowClose }) =>
         />
         <div style={{
           backgroundColor: 'rgba(255,255,255,0.5)',
-          color: black;
-          position: absolute;
-          text-align: center;
-          top: 93%;
-          transform: translate(0%, -50%);
-          width: 100%;
+          color: 'black',
+          position: 'absolute',
+          textAlign: 'center',
+          top: '93%',
+          transform: 'translate(0%, -50%)',
+          width: '100%',
         }}>
           {truncateString(data?.name || id, 10)}
         </div>

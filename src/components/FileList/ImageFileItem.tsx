@@ -49,7 +49,38 @@ const ImageFileItem = memo<FileItemProps>(({ editable, id, alwaysShowClose }) =>
     [id],
   );
 
-  return (
+  const imageFileExtensions = ['.jpg', '.jpeg', '.png', '.gif', '.bmp', '.tiff', '.ico', '.webp', '.svg', '.eps', '.raw', '.heif', '.heic'];
+
+  const isImage = (filename: string) => {
+    const extension = filename.slice((filename.lastIndexOf(".") - 1 >>> 0) + 2);
+    return imageFileExtensions.includes(`.${extension.toLowerCase()}`);
+  }
+  const isShowImage = isImage(data?.name);
+  if (isShowImage) {
+    return (
+      <Image
+        actions={
+          editable && (
+            <ActionIcon
+              className={styles.deleteButton}
+              glass
+              icon={Trash}
+              onClick={handleRemoveFile}
+              size={'small'}
+            />
+          )
+        }
+        alt={data?.name || id || ''}
+        alwaysShowActions={alwaysShowClose}
+        height={isSafari ? 'auto' : '100%'}
+        isLoading={isLoading}
+        size={IMAGE_SIZE as any}
+        src={data?.url}
+        style={{ height: isSafari ? 'auto' : '100%' }}
+        wrapperClassName={cx(styles.image, editable && styles.editableImage)}
+      />
+    );
+  } else {
     <Image
       actions={
         editable && (
@@ -68,10 +99,10 @@ const ImageFileItem = memo<FileItemProps>(({ editable, id, alwaysShowClose }) =>
       isLoading={isLoading}
       size={IMAGE_SIZE as any}
       src={data?.url}
-      style={{ height: isSafari ? 'auto' : '100%' }}
+      style={{ height: isSafari ? 'auto' : '100%', backgroundColor: 'white', display: 'flex', alignItems: 'center', justifyContent: 'center' }}
       wrapperClassName={cx(styles.image, editable && styles.editableImage)}
     />
-  );
+  }
 });
 
 export default ImageFileItem;

@@ -63,6 +63,16 @@ const ImageFileItem = memo<FileItemProps>(({ editable, id, alwaysShowClose }) =>
   if (data && data.name) {
     isShowImage = isImage(data.name);
   }
+
+  const truncateString = (filename: any, maxChars: any) => {
+    if (!filename) return '';
+    if (filename.length > maxChars) {
+      const extension = filename.slice((filename.lastIndexOf(".") - 1 >>> 0) + 2);
+      return filename.substring(0, maxChars) + extension;
+    }
+    return filename;
+  }
+
   if (isShowImage) {
     return (
       <Image
@@ -89,7 +99,7 @@ const ImageFileItem = memo<FileItemProps>(({ editable, id, alwaysShowClose }) =>
     );
   } else {
     return (
-      <div style={{ display: 'inline-block',position: 'relative'}}>
+      <div style={{ display: 'inline-block', position: 'relative' }}>
         <Image
           actions={
             editable && (
@@ -119,14 +129,14 @@ const ImageFileItem = memo<FileItemProps>(({ editable, id, alwaysShowClose }) =>
         />
         <div style={{
           backgroundColor: 'rgba(255,255,255,0.5)',
-          color: 'black',
-          left: '50%',
-          padding: '10px',
-          position: 'absolute',
-          top: '50%',
-          transform: 'translate(-50%, -50%)'
+          color: black;
+          position: absolute;
+          text-align: center;
+          top: 93%;
+          transform: translate(0%, -50%);
+          width: 100%;
         }}>
-          {data?.name || id}
+          {truncateString(data?.name || id, 10)}
         </div>
       </div>
     );

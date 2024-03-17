@@ -134,7 +134,7 @@ const ImageFileItem = memo<FileItemProps>(({ editable, id, alwaysShowClose }) =>
           }}
           wrapperClassName={cx(styles.image, editable && styles.editableImage)}
         />
-        <div style={{ color: '#ffffff', fontWeight: 'bold', left: '50%', position: 'absolute', textAlign: 'center', top: '55%', transform: 'translate(-50%, -50%)', width: '100%' }}>
+        <div style={{ color: '#ffffff', fontWeight: 'bold', left: '50%', position: 'absolute', textAlign: 'center', top: '55%', transform: 'translate(-50%, -50%)', width: '90%' }}>
           <a
             href={data?.url}
             rel="noreferrer noopener"

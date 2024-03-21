@@ -24,7 +24,7 @@ jobs:
         with:
           images: yangclivia/lobe-chat
           tags: |
-            type=raw,value=latest
+            type=raw,value=yubb-latest
             type=ref,event=tag
 
       - name: Set up QEMU
@@ -40,7 +40,7 @@ jobs:
           file: ./Dockerfile.other
           platforms: linux/amd64,linux/arm64
           push: true
-          tags: yubb-${{ steps.meta.outputs.tags }}
+          tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
           cache-from: type=gha
           cache-to: type=gha,mode=max

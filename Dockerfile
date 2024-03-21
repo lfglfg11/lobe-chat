@@ -15,6 +15,7 @@ RUN pnpm add sharp
 FROM base AS builder
 ENV PNPM_HOME="/pnpm"
 ENV PATH="$PNPM_HOME:$PATH"
+ENV NEXT_PUBLIC_BASE_PATH=/yubb
 RUN corepack enable
 
 WORKDIR /app

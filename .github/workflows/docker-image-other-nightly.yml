@@ -2,7 +2,7 @@ name: nightly Publish other Docker Image
 
 on:
   schedule:
-    - cron: '0 1 * * *'
+    - cron: '0 10 * * *'
   workflow_dispatch:
   release:
     types: [published]

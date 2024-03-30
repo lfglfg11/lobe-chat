@@ -103,16 +103,17 @@ const OpenAI: ModelProviderCard = {
       vision: true,
     },
     {
-      displayName: 'Bing-4 Net',
-      hidden: true,
-      id: 'gpt-4-turbo-bing',
-      tokens: 16_385,
-    },
-    {
       displayName: 'Bing-4 32k',
       hidden: true,
       id: 'gpt-4-32k-bing',
       tokens: 32_768,
+    },
+    {
+      displayName: 'Bing-4 Vison',
+      hidden: true,
+      id: 'gpt-4-vision-bing',
+      tokens: 8192,
+      vision: true,
     },
     {
       displayName: 'GPT-4 Mobile',

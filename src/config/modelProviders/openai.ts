@@ -10,14 +10,14 @@ const OpenAI: ModelProviderCard = {
       tokens: 16_385,
     },
     {
-      displayName: 'Coze-3.5-Net',
+      displayName: 'Coze-3.5 Net',
       hidden: true,
       id: 'gpt-3.5-coze',
       tokens: 8192,
       vision: true,
     },
     {
-      displayName: 'Bing-3.5-Net',
+      displayName: 'Bing-3.5 Net',
       hidden: true,
       id: 'gpt-3.5-bing',
       tokens: 8192,
@@ -150,7 +150,7 @@ const OpenAI: ModelProviderCard = {
       vision: true,
     },
     {
-      displayName: 'Moonshot-v1 Vision',
+      displayName: 'Moonshot-V1 Vision',
       files: true,
       hidden: true,
       id: 'moonshot-v1-vision',

@@ -152,6 +152,7 @@ const OpenAI: ModelProviderCard = {
     },
     {
       displayName: 'Step-V1 Vision',
+      files: true,
       hidden: true,
       id: 'llava-step-v1-vision',
       tokens: 32_768,

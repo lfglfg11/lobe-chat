@@ -144,6 +144,13 @@ const OpenAI: ModelProviderCard = {
       tokens: 32_768,
     },
     {
+      displayName: 'Step-V1',
+      hidden: true,
+      id: 'step-v1',
+      tokens: 32_768,
+      vision: true,
+    },
+    {
       displayName: 'Moonshot-V1',
       hidden: true,
       id: 'moonshot-v1',

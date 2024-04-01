@@ -16,8 +16,8 @@ const ZhiPu: ModelProviderCard = {
       description:
         '实现了视觉语言特征的深度融合，支持视觉问答、图像字幕、视觉定位、复杂目标检测等各类多模态理解任务',
       displayName: 'GLM-4 Vision',
-      id: 'glm-4v',
       files: true,
+      id: 'glm-4v',
       tokens: 128_000,
       vision: true,
     },

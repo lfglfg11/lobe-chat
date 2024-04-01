@@ -14,6 +14,8 @@ import {
   Perplexity,
   Tongyi,
   ZeroOne,
+  Copilot,
+  ByteDance,
 } from '@lobehub/icons';
 import { memo } from 'react';
 
@@ -31,6 +33,8 @@ const ModelIcon = memo<ModelIconProps>(({ model, size = 12 }) => {
   if (model.includes('titan')) return <Aws size={size} />;
   if (model.includes('llama')) return <Meta size={size} />;
   if (model.includes('llava')) return <LLaVA size={size} />;
+  if (model.includes('bing')) return <Copilot size={size} />;
+  if (model.includes('coze')) return <ByteDance size={size} />;
   if (model.includes('gemini')) return <Gemini size={size} />;
   if (model.includes('gemma')) return <Gemma.Simple size={size} />;
   if (model.includes('moonshot')) return <Moonshot size={size} />;

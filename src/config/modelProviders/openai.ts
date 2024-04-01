@@ -133,14 +133,14 @@ const OpenAI: ModelProviderCard = {
     {
       displayName: 'Coze-3.5 Net',
       hidden: true,
-      id: 'gpt-3.5-coze',
+      id: 'coze-3.5',
       tokens: 8192,
       vision: true,
     },
     {
       displayName: 'Coze-4 Net',
       hidden: true,
-      id: 'gpt-4-coze',
+      id: 'coze-4',
       tokens: 8192,
       vision: true,
     },

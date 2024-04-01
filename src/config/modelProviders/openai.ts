@@ -156,6 +156,7 @@ const OpenAI: ModelProviderCard = {
       id: 'llava-step-v1-vision',
       tokens: 32_768,
       vision: true,
+      files: true,
     },
     {
       displayName: 'Moonshot-V1',

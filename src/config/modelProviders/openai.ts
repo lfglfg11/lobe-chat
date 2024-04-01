@@ -10,6 +10,19 @@ const OpenAI: ModelProviderCard = {
       tokens: 16_385,
     },
     {
+      displayName: 'Coze-3.5 Net',
+      hidden: true,
+      id: 'gpt-3.5-coze',
+      tokens: 8192,
+      vision: true,
+    },
+    {
+      displayName: 'Bing-3.5 Net',
+      hidden: true,
+      id: 'gpt-3.5-bing',
+      tokens: 8192,
+    },
+    {
       displayName: 'GPT-4',
       hidden: true,
       id: 'gpt-4',
@@ -82,7 +95,26 @@ const OpenAI: ModelProviderCard = {
       tokens: 128_000,
       vision: true,
     },
-
+    {
+      displayName: 'Coze-4 Net',
+      hidden: true,
+      id: 'gpt-4-coze',
+      tokens: 8192,
+      vision: true,
+    },
+    {
+      displayName: 'Bing-4 32k',
+      hidden: true,
+      id: 'gpt-4-32k-bing',
+      tokens: 32_768,
+    },
+    {
+      displayName: 'Bing-4 Vison',
+      hidden: true,
+      id: 'gpt-4-vision-bing',
+      tokens: 8192,
+      vision: true,
+    },
     {
       displayName: 'GPT-4 Mobile',
       hidden: true,
@@ -112,39 +144,6 @@ const OpenAI: ModelProviderCard = {
       tokens: 32_768,
     },
     {
-      displayName: 'Bing-3.5 Net',
-      hidden: true,
-      id: 'bing-3.5-net',
-      tokens: 8192,
-    },
-    {
-      displayName: 'Bing-4 32k',
-      hidden: true,
-      id: 'bing-4-32k',
-      tokens: 32_768,
-    },
-    {
-      displayName: 'Bing-4 Vison',
-      hidden: true,
-      id: 'bing-4-vision',
-      tokens: 8192,
-      vision: true,
-    },
-    {
-      displayName: 'Coze-3.5 Net',
-      hidden: true,
-      id: 'coze-3.5',
-      tokens: 8192,
-      vision: true,
-    },
-    {
-      displayName: 'Coze-4 Net',
-      hidden: true,
-      id: 'coze-4',
-      tokens: 8192,
-      vision: true,
-    },
-    {
       displayName: 'Step-V1',
       hidden: true,
       id: 'llava-step-v1',
@@ -153,7 +152,6 @@ const OpenAI: ModelProviderCard = {
     },
     {
       displayName: 'Step-V1 Vision',
-      files: true,
       hidden: true,
       id: 'llava-step-v1-vision',
       tokens: 32_768,

@@ -26,7 +26,7 @@ const FileUpload = memo(() => {
 
   return (
     <Upload
-      accept={enabledFiles ? undefined : '*/*'}
+      accept={enabledFiles ? undefined : 'image/*'}
       beforeUpload={async (file) => {
         setLoading(true);
 

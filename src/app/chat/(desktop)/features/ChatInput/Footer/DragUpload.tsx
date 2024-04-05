@@ -76,7 +76,7 @@ const DragUpload = memo(() => {
 
     const pools = Array.from(fileList).map(async (file) => {
       // skip none-file items
-      if (!file.type.startsWith('image')) return;
+      // if (!file.type.startsWith('image')) return;
       await uploadFile(file);
     });
 

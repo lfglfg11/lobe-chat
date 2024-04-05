@@ -122,6 +122,14 @@ const Ollama: ModelProviderCard = {
       vision: false,
     },
     {
+      displayName: 'Qwen Chat',
+      functionCall: false,
+      hidden: true,
+      id: 'qwen-v1',
+      tokens: 16_000,
+      vision: true,
+    },
+    {
       displayName: 'Qwen Chat PLUS',
       files: true,
       functionCall: false,

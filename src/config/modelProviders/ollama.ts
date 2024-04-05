@@ -123,11 +123,12 @@ const Ollama: ModelProviderCard = {
     },
     {
       displayName: 'Qwen Chat PLUS',
+      files: true,
       functionCall: false,
       hidden: true,
       id: 'qwen-plus',
       tokens: 32_768,
-      vision: false,
+      vision: true,
     },
     {
       displayName: 'LLaVA 7B',
@@ -160,7 +161,7 @@ const Ollama: ModelProviderCard = {
       hidden: true,
       id: 'qwen-plus',
       tokens: 30_000,
-      vision: false,
+      vision: true,
     },
     {
       displayName: 'Qwen Turbo',

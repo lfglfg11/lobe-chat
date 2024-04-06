@@ -91,12 +91,12 @@ const DragUpload = memo(() => {
   console.log("enabledFiles:" + enabledFiles);
 
 
-  const uploadImages = async (fileList: FileList | undefined) => {
+  const uploadImages = async (fileList: FileList | undefined, enabledFiles: boolean) => {
     if (!fileList || fileList.length === 0) return;
 
     const pools = Array.from(fileList).map(async (file) => {
       // skip none-file items
-      console.log("********enabledFiles:" + enabledFiles);
+      console.log("*********enabledFiles:" + enabledFiles);
       if (!file.type.startsWith('image') && !enabledFiles) return;
       await uploadFile(file);
     });
@@ -136,7 +136,7 @@ const DragUpload = memo(() => {
     const files = e.dataTransfer?.files;
 
     // upload files
-    uploadImages(files);
+    uploadImages(files, enabledFiles);
   };
 
   const handlePaste = (event: ClipboardEvent) => {
@@ -144,7 +144,7 @@ const DragUpload = memo(() => {
 
     const files = event.clipboardData?.files;
 
-    uploadImages(files);
+    uploadImages(files, enabledFiles);
   };
 
   useEffect(() => {

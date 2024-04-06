@@ -76,24 +76,22 @@ const DragUpload = memo(() => {
 
   const uploadFile = useFileStore((s) => s.uploadFile);
 
-  const model = useSessionStore(agentSelectors.currentAgentModel);
-
-  console.log("model:" + model)
-
-  const [canUpload, enabledFiles] = useGlobalStore((s) => {
-    const modeledUpload = modelProviderSelectors.modelEnabledUpload(model)(s);
-    const modeledFiles = modelProviderSelectors.modelEnabledFiles(model)(s);
-
-    return [modeledUpload, modeledFiles ?? false];
-  });
-
-  console.log("canUpload:" + canUpload);
-  console.log("enabledFiles:" + enabledFiles);
-
-
   const uploadImages = async (fileList: FileList | undefined) => {
     if (!fileList || fileList.length === 0) return;
+    const model = useSessionStore(agentSelectors.currentAgentModel);
 
+    console.log("model:" + model)
+  
+    const [canUpload, enabledFiles] = useGlobalStore((s) => {
+      const modeledUpload = modelProviderSelectors.modelEnabledUpload(model)(s);
+      const modeledFiles = modelProviderSelectors.modelEnabledFiles(model)(s);
+  
+      return [modeledUpload, modeledFiles ?? false];
+    });
+  
+    console.log("canUpload:" + canUpload);
+    console.log("enabledFiles:" + enabledFiles);
+    
     const pools = Array.from(fileList).map(async (file) => {
       // skip none-file items
       if (!file.type.startsWith('image') && !enabledFiles) return;

@@ -79,10 +79,13 @@ const DragUpload = memo(() => {
   const model = useSessionStore(agentSelectors.currentAgentModel);
 
   console.log("model:"+ model)
-  
-  const enabledFiles = useGlobalStore((s) => [
+
+  const [canUpload, enabledFiles] = useGlobalStore((s) => [
+    modelProviderSelectors.modelEnabledUpload(model)(s),
     modelProviderSelectors.modelEnabledFiles(model)(s),
   ]);
+  
+  console.log("canUpload:"+ canUpload)
   console.log("enabledFiles:"+ enabledFiles)
 
   const uploadImages = async (fileList: FileList | undefined) => {

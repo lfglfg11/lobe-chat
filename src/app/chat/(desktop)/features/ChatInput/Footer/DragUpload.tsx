@@ -98,7 +98,7 @@ const DragUpload = memo(() => {
 
     const pools = Array.from(fileList).map(async (file) => {
       if (!file.type.startsWith('image') && !enabledFiles) return;
-      await uploadFile(file) ?? false;
+      await uploadFile(file);
     });
 
     await Promise.all(pools);

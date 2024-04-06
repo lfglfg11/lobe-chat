@@ -153,7 +153,7 @@ const DragUpload = memo(() => {
       window.removeEventListener('drop', handleDrop);
       window.removeEventListener('paste', handlePaste);
     };
-  }, []);
+  }, [handleDrop, handlePaste]);  
 
   return (
     isDragging && (

@@ -1,8 +1,9 @@
 import { Icon } from '@lobehub/ui';
+
 import { createStyles } from 'antd-style';
 import { FileImage, FileText, FileUpIcon } from 'lucide-react';
 import { rgba } from 'polished';
-import { memo, useEffect, useRef, useState } from 'react';
+import { memo, useEffect, useRef, useState, useCallback } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Center, Flexbox } from 'react-layout-kit';
 import { useGlobalStore } from '@/store/global';
@@ -65,6 +66,15 @@ const handleDragOver = (e: DragEvent) => {
   e.preventDefault();
 };
 
+const getEnabledFiles = () => {
+  const model = useSessionStore(agentSelectors.currentAgentModel);
+  const updatedEnabledFiles = useGlobalStore((s) => {
+    const modeledFiles = modelProviderSelectors.modelEnabledFiles(model)(s);
+    return modeledFiles ?? false;
+  });
+  return updatedEnabledFiles;
+};
+
 const DragUpload = memo(() => {
   const { styles } = useStyles();
   const { t } = useTranslation('chat');
@@ -78,18 +88,21 @@ const DragUpload = memo(() => {
 
   const model = useSessionStore(agentSelectors.currentAgentModel);
 
-  const uploadImages = async (fileList: FileList | undefined, enabledFiles: boolean) => {
+  const enabledFiles = useGlobalStore((s) => {
+    const modeledFiles = modelProviderSelectors.modelEnabledFiles(model)(s);
+    return modeledFiles ?? false;
+  });
+
+  const uploadImages = useCallback(async (fileList: FileList | undefined) => {
     if (!fileList || fileList.length === 0) return;
 
     const pools = Array.from(fileList).map(async (file) => {
-      // skip none-file items
-      console.log("*********enabledFiles:" + enabledFiles);
       if (!file.type.startsWith('image') && !enabledFiles) return;
-      await uploadFile(file);
+      await uploadFile(file) ?? false;
     });
 
     await Promise.all(pools);
-  };
+  }, [enabledFiles, uploadFile]);
 
   const handleDragEnter = (e: DragEvent) => {
     e.preventDefault();
@@ -111,39 +124,19 @@ const DragUpload = memo(() => {
     }
   };
 
-  const handleDrop = async (e: DragEvent) => {
+  const handleDrop = useCallback(async (e: DragEvent) => {
     e.preventDefault();
-    // reset counter
     dragCounter.current = 0;
-
     setIsDragging(false);
-
-    // get filesList
-    // TODO: support folder files upload
     const files = e.dataTransfer?.files;
+    uploadImages(files);
+  }, [uploadImages]);
 
-    // get models is EnabledFiles
-    const updatedEnabledFiles = useGlobalStore((s) => {
-      const modeledFiles = modelProviderSelectors.modelEnabledFiles(model)(s);
-      return modeledFiles ?? false;
-    });
-    // upload files
-    uploadImages(files, updatedEnabledFiles);
-  };
-
-  const handlePaste = (event: ClipboardEvent) => {
-    // get files from clipboard
-
+  const handlePaste = useCallback((event: ClipboardEvent) => {
     const files = event.clipboardData?.files;
+    uploadImages(files);
+  }, [uploadImages]);
 
-    // get models is EnabledFiles
-    const updatedEnabledFiles = useGlobalStore((s) => {
-      const modeledFiles = modelProviderSelectors.modelEnabledFiles(model)(s);
-      return modeledFiles ?? false;
-    });
-    // upload files
-    uploadImages(files, updatedEnabledFiles);
-  };
 
   useEffect(() => {
     window.addEventListener('dragenter', handleDragEnter);
@@ -183,3 +176,5 @@ const DragUpload = memo(() => {
 });
 
 export default DragUpload;
+
+

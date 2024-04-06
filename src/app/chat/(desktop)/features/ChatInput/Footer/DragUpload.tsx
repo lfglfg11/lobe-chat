@@ -78,19 +78,6 @@ const DragUpload = memo(() => {
 
   const model = useSessionStore(agentSelectors.currentAgentModel);
 
-  console.log("model:" + model)
-
-  const [canUpload, enabledFiles] = useGlobalStore((s) => {
-    const modeledUpload = modelProviderSelectors.modelEnabledUpload(model)(s);
-    const modeledFiles = modelProviderSelectors.modelEnabledFiles(model)(s);
-
-    return [modeledUpload, modeledFiles ?? false];
-  });
-
-  console.log("canUpload:" + canUpload);
-  console.log("enabledFiles:" + enabledFiles);
-
-
   const uploadImages = async (fileList: FileList | undefined, enabledFiles: boolean) => {
     if (!fileList || fileList.length === 0) return;
 
@@ -135,8 +122,13 @@ const DragUpload = memo(() => {
     // TODO: support folder files upload
     const files = e.dataTransfer?.files;
 
+    // get models is EnabledFiles
+    const updatedEnabledFiles = useGlobalStore((s) => {
+      const modeledFiles = modelProviderSelectors.modelEnabledFiles(model)(s);
+      return modeledFiles ?? false;
+    });
     // upload files
-    uploadImages(files, enabledFiles);
+    uploadImages(files, updatedEnabledFiles);
   };
 
   const handlePaste = (event: ClipboardEvent) => {
@@ -144,7 +136,13 @@ const DragUpload = memo(() => {
 
     const files = event.clipboardData?.files;
 
-    uploadImages(files, enabledFiles);
+    // get models is EnabledFiles
+    const updatedEnabledFiles = useGlobalStore((s) => {
+      const modeledFiles = modelProviderSelectors.modelEnabledFiles(model)(s);
+      return modeledFiles ?? false;
+    });
+    // upload files
+    uploadImages(files, updatedEnabledFiles);
   };
 
   useEffect(() => {

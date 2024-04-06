@@ -5,8 +5,11 @@ import { rgba } from 'polished';
 import { memo, useEffect, useRef, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Center, Flexbox } from 'react-layout-kit';
-
+import { useGlobalStore } from '@/store/global';
 import { useFileStore } from '@/store/file';
+import { modelProviderSelectors } from '@/store/global/selectors';
+import { useSessionStore } from '@/store/session';
+import { agentSelectors } from '@/store/session/selectors';
 
 const useStyles = createStyles(({ css, token, stylish }) => {
   return {
@@ -56,6 +59,8 @@ const useStyles = createStyles(({ css, token, stylish }) => {
   };
 });
 
+
+
 const handleDragOver = (e: DragEvent) => {
   e.preventDefault();
 };
@@ -71,12 +76,17 @@ const DragUpload = memo(() => {
 
   const uploadFile = useFileStore((s) => s.uploadFile);
 
+  const model = useSessionStore(agentSelectors.currentAgentModel);
+  const enabledFiles = useGlobalStore((s) => [
+    modelProviderSelectors.modelEnabledFiles(model)(s),
+  ]);
+
   const uploadImages = async (fileList: FileList | undefined) => {
     if (!fileList || fileList.length === 0) return;
 
     const pools = Array.from(fileList).map(async (file) => {
       // skip none-file items
-      // if (!file.type.startsWith('image')) return;
+      if (!file.type.startsWith('image') && !enabledFiles) return;
       await uploadFile(file);
     });
 

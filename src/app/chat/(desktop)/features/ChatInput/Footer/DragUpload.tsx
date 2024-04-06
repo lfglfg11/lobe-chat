@@ -66,15 +66,6 @@ const handleDragOver = (e: DragEvent) => {
   e.preventDefault();
 };
 
-const getEnabledFiles = () => {
-  const model = useSessionStore(agentSelectors.currentAgentModel);
-  const updatedEnabledFiles = useGlobalStore((s) => {
-    const modeledFiles = modelProviderSelectors.modelEnabledFiles(model)(s);
-    return modeledFiles ?? false;
-  });
-  return updatedEnabledFiles;
-};
-
 const DragUpload = memo(() => {
   const { styles } = useStyles();
   const { t } = useTranslation('chat');
@@ -126,14 +117,24 @@ const DragUpload = memo(() => {
 
   const handleDrop = useCallback(async (e: DragEvent) => {
     e.preventDefault();
+    // reset counter
     dragCounter.current = 0;
+
     setIsDragging(false);
+
+    // get filesList
+    // TODO: support folder files upload
     const files = e.dataTransfer?.files;
+
+    // upload files
     uploadImages(files);
   }, [uploadImages]);
 
   const handlePaste = useCallback((event: ClipboardEvent) => {
+    // get files from clipboard
+
     const files = event.clipboardData?.files;
+
     uploadImages(files);
   }, [uploadImages]);
 

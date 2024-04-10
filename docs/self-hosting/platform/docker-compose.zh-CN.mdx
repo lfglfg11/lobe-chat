@@ -1,13 +1,3 @@
----
-title: 通过 Docker Compose 部署 LobeChat
-description: 学习如何使用 Docker Compose 部署 LobeChat 服务，包括安装 Docker 容器环境和自动更新脚本设置。
-tags:
-  - Docker Compose
-  - LobeChat
-  - Docker 容器
-  - 自动更新脚本
-  - 部署指引
----
 # Docker Compose 部署指引
 
 <div style={{display:"flex", gap: 4}}>
@@ -26,21 +16,18 @@ tags:
   （如果已安装，请跳过此步）
 
   <Tabs items={['Ubuntu', 'CentOS']}>
-    <Tab>
+    <Tabs.Tab>
       ```fish
       $ apt install docker.io
       ```
-   
-</Tab>
+    </Tabs.Tab>
 
-    <Tab>
+    <Tabs.Tab>
       ```fish
       $ yum install docker
       ```
-   
-</Tab>
- 
-</Tabs>
+    </Tabs.Tab>
+  </Tabs>
 
   ### 运行 Docker Compose 部署指令
 

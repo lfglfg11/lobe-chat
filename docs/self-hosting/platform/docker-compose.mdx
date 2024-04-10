@@ -1,16 +1,3 @@
----
-title: Deploy LobeChat with Docker Compose
-description: >-
-  Learn how to deploy the LobeChat service using Docker Compose. Follow
-  step-by-step instructions to install Docker, run the deployment command, and
-  set up automatic updates.
-tags:
-  - Docker Compose
-  - LobeChat Service
-  - Docker Deployment
-  - Automatic Updates
-  - Crontab Script
----
 # Docker Compose Deployment Guide
 
 <div style={{display:"flex", gap: 4}}>
@@ -29,21 +16,18 @@ We provide a [Docker image][docker-release-link] for deploying the LobeChat serv
   (Skip this step if already installed)
 
   <Tabs items={['Ubuntu', 'CentOS']}>
-    <Tab>
+    <Tabs.Tab>
       ```fish
       $ apt install docker.io
       ```
-   
-</Tab>
+    </Tabs.Tab>
 
-    <Tab>
+    <Tabs.Tab>
       ```fish
       $ yum install docker
       ```
-   
-</Tab>
- 
-</Tabs>
+    </Tabs.Tab>
+  </Tabs>
 
   ### Run Docker Compose Deployment Command
 

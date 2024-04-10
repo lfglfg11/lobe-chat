@@ -155,17 +155,6 @@ const Ollama: ModelProviderCard = {
     },
     // TODO: 在单独支持千问之后这些 Qwen 模型需要移动到千问的配置中
     {
-<<<<<<< Updated upstream
-=======
-      displayName: 'Qwen Plus',
-      functionCall: true,
-      hidden: true,
-      id: 'qwen-plus',
-      tokens: 30_000,
-      vision: false,
-    },
-    {
->>>>>>> Stashed changes
       displayName: 'Qwen Turbo',
       functionCall: true,
       hidden: true,

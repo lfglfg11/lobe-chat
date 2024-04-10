@@ -6,6 +6,10 @@ const OpenAI: ModelProviderCard = {
     {
       description: 'GPT 3.5 Turbo，适用于各种文本生成和理解任务',
       displayName: 'GPT-3.5 Turbo',
+<<<<<<< Updated upstream
+=======
+      functionCall: true,
+>>>>>>> Stashed changes
       id: 'gpt-3.5-turbo',
       tokens: 16_385,
     },
@@ -82,6 +86,7 @@ const OpenAI: ModelProviderCard = {
       tokens: 128_000,
     },
     {
+<<<<<<< Updated upstream
       displayName: 'GPT-4 Turbo Preview (1106)',
       hidden: true,
       id: 'gpt-4-1106-preview',
@@ -92,39 +97,11 @@ const OpenAI: ModelProviderCard = {
       files: true,
       hidden: true,
       id: 'gpt-4-all',
-      tokens: 128_000,
-      vision: true,
-    },
-    {
-      displayName: 'Coze-4 Net',
-      hidden: true,
-      id: 'gpt-4-coze',
-      tokens: 8192,
-      vision: true,
-    },
-    {
-      displayName: 'Bing-4 32k',
-      hidden: true,
-      id: 'gpt-4-32k-bing',
-      tokens: 32_768,
-    },
-    {
-      displayName: 'Bing-4 Vison',
-      hidden: true,
-      id: 'gpt-4-vision-bing',
-      tokens: 8192,
-      vision: true,
-    },
-    {
-      displayName: 'GPT-4 Mobile',
-      hidden: true,
-      id: 'gpt-4-mobile',
-      tokens: 128_000,
-    },
-    {
+=======
       description: 'GPT-4 视觉预览版，支持视觉任务',
-      displayName: 'GPT-4 Vision Preview',
+      displayName: 'GPT-4 Turbo Vision Preview',
       id: 'gpt-4-vision-preview',
+>>>>>>> Stashed changes
       tokens: 128_000,
       vision: true,
     },
@@ -150,19 +127,25 @@ const OpenAI: ModelProviderCard = {
       tokens: 8192,
     },
     {
+      displayName: 'GPT-4 32K',
+      functionCall: true,
       hidden: true,
       id: 'gpt-4-32k',
       tokens: 32_768,
     },
     {
+      displayName: 'GPT-4 32K (0613)',
+      functionCall: true,
       hidden: true,
       id: 'gpt-4-32k-0613',
       tokens: 32_768,
     },
     {
-      displayName: 'Step-V1',
+      displayName: 'GPT-4 ALL',
+      files: true,
+      functionCall: true,
       hidden: true,
-      id: 'llava-step-v1',
+      id: 'gpt-4-all',
       tokens: 32_768,
       vision: true,
     },

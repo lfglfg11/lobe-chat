@@ -125,16 +125,7 @@ const Ollama: ModelProviderCard = {
       displayName: 'Qwen Chat',
       functionCall: false,
       hidden: true,
-      id: 'qwen-v1',
-      tokens: 16_000,
-      vision: true,
-    },
-    {
-      displayName: 'Qwen Chat PLUS',
-      files: true,
-      functionCall: false,
-      hidden: true,
-      id: 'qwen-plus',
+      id: 'qwen:72b',
       tokens: 32_768,
       vision: true,
     },
@@ -164,6 +155,17 @@ const Ollama: ModelProviderCard = {
     },
     // TODO: 在单独支持千问之后这些 Qwen 模型需要移动到千问的配置中
     {
+<<<<<<< Updated upstream
+=======
+      displayName: 'Qwen Plus',
+      functionCall: true,
+      hidden: true,
+      id: 'qwen-plus',
+      tokens: 30_000,
+      vision: false,
+    },
+    {
+>>>>>>> Stashed changes
       displayName: 'Qwen Turbo',
       functionCall: true,
       hidden: true,

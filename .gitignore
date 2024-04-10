@@ -63,3 +63,9 @@ robots.txt
 src/config/modelProviders/openai.ts
 src/config/modelProviders/openai.ts
 src/config/modelProviders/openai.ts
+src/config/modelProviders/ollama.ts
+src/config/modelProviders/openai.ts
+src/config/modelProviders/zhipu.ts
+src/config/modelProviders/ollama.ts
+src/config/modelProviders/openai.ts
+src/config/modelProviders/zhipu.ts

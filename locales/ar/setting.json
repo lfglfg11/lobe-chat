@@ -105,13 +105,17 @@
         "title": "مفتاح API"
       }
     },
-    "groq": {
-      "title": "Groq",
-      "token": {
-        "desc": "أدخل مفتاح API الخاص بـ Groq",
-        "placeholder": "Groq API Key",
-        "title": "مفتاح API"
-      }
+    "fetcher": {
+      "fetch": "احصل على قائمة النماذج",
+      "fetching": "جاري الحصول على قائمة النماذج...",
+      "latestTime": "آخر تحديث: {{time}}",
+      "noLatestTime": "لم يتم الحصول على قائمة بعد"
+    },
+    "modelList": {
+      "desc": "اختيار النموذج الذي سيتم عرضه في الجلسة، سيتم عرض النموذج المحدد في قائمة النماذج",
+      "placeholder": "الرجاء اختيار نموذج من القائمة",
+      "title": "قائمة النماذج",
+      "total": "متاح {{count}} نموذج"
     },
     "mistral": {
       "title": "Mistral AI",

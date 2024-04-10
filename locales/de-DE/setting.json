@@ -105,13 +105,17 @@
         "title": "API Key"
       }
     },
-    "groq": {
-      "title": "Groq",
-      "token": {
-        "desc": "Geben Sie Ihren API-Key von Groq ein",
-        "placeholder": "Groq API Key",
-        "title": "API Key"
-      }
+    "fetcher": {
+      "fetch": "Modelle abrufen",
+      "fetching": "Modelle werden abgerufen...",
+      "latestTime": "Letzte Aktualisierung: {{time}}",
+      "noLatestTime": "Liste noch nicht abgerufen"
+    },
+    "modelList": {
+      "desc": "Wählen Sie die Modelle aus, die in der Sitzung angezeigt werden sollen. Die ausgewählten Modelle werden in der Modellliste angezeigt.",
+      "placeholder": "Wählen Sie ein Modell aus der Liste aus",
+      "title": "Modellliste",
+      "total": "Insgesamt {{count}} Modelle verfügbar"
     },
     "mistral": {
       "title": "Mistral AI",

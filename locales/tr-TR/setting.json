@@ -105,13 +105,17 @@
         "title": "API Key"
       }
     },
-    "groq": {
-      "title": "Groq",
-      "token": {
-        "desc": "Groq'tan gelen API Key'i girin",
-        "placeholder": "Groq API Key",
-        "title": "API Key"
-      }
+    "fetcher": {
+      "fetch": "Modelleri Al",
+      "fetching": "Modelleri alınıyor...",
+      "latestTime": "Son güncelleme zamanı: {{time}}",
+      "noLatestTime": "Liste henüz alınamadı"
+    },
+    "modelList": {
+      "desc": "Görüntülenecek modeli seçin, seçilen model model listesinde görüntülenecektir",
+      "placeholder": "Lütfen listeden bir model seçin",
+      "title": "Model Listesi",
+      "total": "Toplam {{count}} model kullanılabilir"
     },
     "mistral": {
       "title": "Mistral AI",

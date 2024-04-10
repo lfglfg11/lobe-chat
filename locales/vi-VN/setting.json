@@ -105,13 +105,17 @@
         "title": "API Key"
       }
     },
-    "groq": {
-      "title": "Groq",
-      "token": {
-        "desc": "Nhập API Key từ Groq",
-        "placeholder": "Groq API Key",
-        "title": "API Key"
-      }
+    "fetcher": {
+      "fetch": "Lấy danh sách mô hình",
+      "fetching": "Đang lấy danh sách mô hình...",
+      "latestTime": "Thời gian cập nhật lần cuối: {{time}}",
+      "noLatestTime": "Chưa có danh sách nào được lấy"
+    },
+    "modelList": {
+      "desc": "Chọn mô hình hiển thị trong cuộc trò chuyện, mô hình đã chọn sẽ được hiển thị trong danh sách mô hình",
+      "placeholder": "Vui lòng chọn mô hình từ danh sách",
+      "title": "Danh sách mô hình",
+      "total": "Tổng cộng có {{count}} mô hình có sẵn"
     },
     "mistral": {
       "title": "Mistral AI",

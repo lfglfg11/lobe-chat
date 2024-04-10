@@ -266,7 +266,7 @@ Our marketplace is not just a showcase platform but also a collaborative space. 
 | [Design Philosophy Analysis](https://chat-preview.lobehub.com/market?agent=sixin-design-analysis)<br/><sup>By **[YuJiaoChiu](https://github.com/YuJiaoChiu)** on **2024-04-09**</sup> | Helps you identify and analyze architectural design philosophies<br/>`arch`                                                                                                               |
 | [YouTube Summary](https://chat-preview.lobehub.com/market?agent=epoch-ai)<br/><sup>By **[epochaudio](https://github.com/epochaudio)** on **2024-04-08**</sup>                         | Specializes in YouTube script analysis and summarization<br/>`you-tube` `script-analysis` `summarization`                                                                                 |
 
-> 📊 Total agents: [<kbd>**226**</kbd> ](https://github.com/lobehub/lobe-chat-agents)
+> 📊 Total agents: [<kbd>**233**</kbd> ](https://github.com/lobehub/lobe-chat-agents)
 
  <!-- AGENT LIST -->
 

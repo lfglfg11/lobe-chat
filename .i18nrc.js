@@ -44,7 +44,11 @@ module.exports = defineConfig({
 >>>>>>> Stashed changes
     entryLocale: 'zh-CN',
     entryExtension: '.zh-CN.md',
+    entryExtension: '.zh-CN.md',
     outputLocales: ['en-US'],
+    outputExtensions: (locale, { getDefaultExtension }) => {
+      if (locale === 'en-US') return '.md';
+      return getDefaultExtension(locale);
     outputExtensions: (locale, { getDefaultExtension }) => {
       if (locale === 'en-US') return '.md';
       return getDefaultExtension(locale);

@@ -2,7 +2,6 @@
 
 # Changelog
 
-<<<<<<< Updated upstream
 ### [Version 0.146.2](https://github.com/lobehub/lobe-chat/compare/v0.146.1...v0.146.2)
 
 <sup>Released on **2024-04-10**</sup>
@@ -45,8 +44,7 @@
 
 </div>
 
-=======
->>>>>>> Stashed changes
+
 ## [Version 0.146.0](https://github.com/lobehub/lobe-chat/compare/v0.145.13...v0.146.0)
 
 <sup>Released on **2024-04-08**</sup>

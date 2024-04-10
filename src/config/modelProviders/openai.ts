@@ -13,20 +13,17 @@ const OpenAI: ModelProviderCard = {
     },
     {
       displayName: 'Coze-3.5 Net',
-      hidden: true,
       id: 'gpt-3.5-coze',
       tokens: 8192,
       vision: true,
     },
     {
       displayName: 'Bing-3.5 Net',
-      hidden: true,
       id: 'gpt-3.5-bing',
       tokens: 8192,
     },
     {
       displayName: 'GPT-4',
-      hidden: true,
       id: 'gpt-4',
       tokens: 32_768,
     },
@@ -79,7 +76,6 @@ const OpenAI: ModelProviderCard = {
     },
     {
       displayName: 'GPT-4 Turbo Preview (1106)',
-      hidden: true,
       id: 'gpt-4-1106-preview',
       tokens: 128_000,
     },
@@ -138,14 +134,12 @@ const OpenAI: ModelProviderCard = {
     {
       displayName: 'Step-V1 Vision',
       files: true,
-      hidden: true,
       id: 'llava-step-v1-vision',
       tokens: 32_768,
       vision: true,
     },
     {
       displayName: 'Moonshot-V1',
-      hidden: true,
       id: 'moonshot-v1',
       tokens: 32_768,
       vision: true,
@@ -153,7 +147,6 @@ const OpenAI: ModelProviderCard = {
     {
       displayName: 'Moonshot-V1 Vision',
       files: true,
-      hidden: true,
       id: 'moonshot-v1-vision',
       tokens: 128_000,
       vision: true,

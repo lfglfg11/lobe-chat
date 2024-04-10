@@ -6,10 +6,7 @@ const OpenAI: ModelProviderCard = {
     {
       description: 'GPT 3.5 Turbo，适用于各种文本生成和理解任务',
       displayName: 'GPT-3.5 Turbo',
-<<<<<<< Updated upstream
-=======
-      functionCall: true,
->>>>>>> Stashed changes
+      functionCall: false,
       id: 'gpt-3.5-turbo',
       tokens: 16_385,
     },
@@ -86,22 +83,21 @@ const OpenAI: ModelProviderCard = {
       tokens: 128_000,
     },
     {
-<<<<<<< Updated upstream
       displayName: 'GPT-4 Turbo Preview (1106)',
       hidden: true,
       id: 'gpt-4-1106-preview',
       tokens: 128_000,
     },
     {
-      displayName: 'GPT-4 All',
-      files: true,
-      hidden: true,
-      id: 'gpt-4-all',
-=======
       description: 'GPT-4 视觉预览版，支持视觉任务',
       displayName: 'GPT-4 Turbo Vision Preview',
       id: 'gpt-4-vision-preview',
->>>>>>> Stashed changes
+      tokens: 128_000,
+      vision: true,
+    },
+    {
+      displayName: 'GPT-4 Turbo Vision Preview (1106)',
+      id: 'gpt-4-1106-vision-preview',
       tokens: 128_000,
       vision: true,
     },

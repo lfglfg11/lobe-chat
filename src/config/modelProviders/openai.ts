@@ -132,6 +132,27 @@ const OpenAI: ModelProviderCard = {
       vision: true,
     },
     {
+      displayName: 'Coze-4 Net',
+      id: 'gpt-4-coze',
+      tokens: 8192,
+    },
+    {
+      displayName: 'Bing-4 32K',
+      id: 'gpt-4-32k-bing',
+      tokens: 8192,
+    },
+    {
+      displayName: 'Bing-4 Vision',
+      id: 'gpt-4-vision-bing',
+      tokens: 8192,
+    },
+    {
+      displayName: 'Step-V1',
+      id: 'llava-step-v1',
+      tokens: 32_768,
+      vision: true,
+    },
+    {
       displayName: 'Step-V1 Vision',
       files: true,
       id: 'llava-step-v1-vision',

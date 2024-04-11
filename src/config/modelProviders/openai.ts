@@ -1,7 +1,5 @@
 import { ModelProviderCard } from '@/types/llm';
 
-const url = "https://gpts.ddaiai.com/open/gpts"
-
 // refs to: https://platform.openai.com/docs/models/gpt-4-and-gpt-4-turbo
 const OpenAI: ModelProviderCard = {
   chatModels: [

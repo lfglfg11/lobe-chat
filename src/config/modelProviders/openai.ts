@@ -1,5 +1,13 @@
 import { ModelProviderCard } from '@/types/llm';
 
+const url = "https://gpts.ddaiai.com/open/gpts"
+
+async function get() {
+    const response = await fetch(url);
+    const data = await response.json();
+  
+    console.log(data);
+}
 // refs to: https://platform.openai.com/docs/models/gpt-4-and-gpt-4-turbo
 const OpenAI: ModelProviderCard = {
   chatModels: [
@@ -65,7 +73,6 @@ const OpenAI: ModelProviderCard = {
     },
     {
       displayName: 'GPT-4 Turbo Preview',
-      enabled: true,
       functionCall: true,
       id: 'gpt-4-turbo-preview',
       tokens: 128_000,
@@ -197,6 +204,38 @@ const OpenAI: ModelProviderCard = {
       files: true,
       functionCall: false,
       id: 'qwen-plus',
+      tokens: 32_768,
+      vision: true,
+    },
+    {
+      displayName: 'GPTS Scholar GPT',
+      files: true,
+      functionCall: false,
+      id: 'gpt-4-gizmo-g-KELDH3S4E',
+      tokens: 32_768,
+      vision: true,
+    },
+    {
+      displayName: 'GPTS Logo Designer',
+      files: true,
+      functionCall: false,
+      id: 'gpt-4-gizmo-g-ymi0COabZ',
+      tokens: 32_768,
+      vision: true,
+    },
+    {
+      displayName: 'GPTS Data Analysis',
+      files: true,
+      functionCall: false,
+      id: 'gpt-4-gizmo-g-BbUDh8z49',
+      tokens: 32_768,
+      vision: true,
+    },
+    {
+      displayName: 'GPTS Professional Coder',
+      files: true,
+      functionCall: false,
+      id: 'gpt-4-gizmo-g-HgZuFuuBK',
       tokens: 32_768,
       vision: true,
     },

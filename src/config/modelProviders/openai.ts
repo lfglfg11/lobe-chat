@@ -6,21 +6,19 @@ const OpenAI: ModelProviderCard = {
     {
       description: 'GPT 3.5 Turbo，适用于各种文本生成和理解任务',
       displayName: 'GPT-3.5 Turbo',
-      enabled: true,
-      functionCall: true,
       id: 'gpt-3.5-turbo',
       tokens: 16_385,
+    },
+    {
+      displayName: 'Bing-3.5 Net',
+      id: 'gpt-3.5-bing',
+      tokens: 8192,
     },
     {
       displayName: 'Coze-3.5 Net',
       id: 'gpt-3.5-coze',
       tokens: 8192,
       vision: true,
-    },
-    {
-      displayName: 'Bing-3.5 Net',
-      id: 'gpt-3.5-bing',
-      tokens: 8192,
     },
     {
       displayName: 'GPT-4',
@@ -80,14 +78,6 @@ const OpenAI: ModelProviderCard = {
       tokens: 128_000,
     },
     {
-      description: 'GPT-4 视觉预览版，支持视觉任务',
-      displayName: 'GPT-4 Turbo Vision Preview',
-      enabled: true,
-      id: 'gpt-4-vision-preview',
-      tokens: 128_000,
-      vision: true,
-    },
-    {
       displayName: 'GPT-4 Turbo Vision Preview (1106)',
       id: 'gpt-4-1106-vision-preview',
       tokens: 128_000,
@@ -120,7 +110,6 @@ const OpenAI: ModelProviderCard = {
     {
       displayName: 'GPT-4 ALL',
       files: true,
-      functionCall: true,
       id: 'gpt-4-all',
       tokens: 32_768,
       vision: true,
@@ -129,6 +118,7 @@ const OpenAI: ModelProviderCard = {
       displayName: 'Coze-4 Net',
       id: 'gpt-4-coze',
       tokens: 8192,
+      vision: true,
     },
     {
       displayName: 'Bing-4 32K',
@@ -139,6 +129,15 @@ const OpenAI: ModelProviderCard = {
       displayName: 'Bing-4 Vision',
       id: 'gpt-4-vision-bing',
       tokens: 8192,
+      vision: true,
+    },
+    {
+      description: 'GPT-4 视觉预览版，支持视觉任务',
+      displayName: 'GPT-4 Vision Preview',
+      enabled: true,
+      id: 'gpt-4-vision-preview',
+      tokens: 128_000,
+      vision: true,
     },
     {
       displayName: 'Step-V1',

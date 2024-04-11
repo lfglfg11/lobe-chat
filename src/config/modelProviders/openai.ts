@@ -6,22 +6,26 @@ const OpenAI: ModelProviderCard = {
     {
       description: 'GPT 3.5 Turbo，适用于各种文本生成和理解任务',
       displayName: 'GPT-3.5 Turbo',
+      enabled: true,
       id: 'gpt-3.5-turbo',
       tokens: 16_385,
     },
     {
       displayName: 'Bing-3.5 Net',
+      enabled: true,
       id: 'gpt-3.5-bing',
       tokens: 8192,
     },
     {
       displayName: 'Coze-3.5 Net',
+      enabled: true,
       id: 'gpt-3.5-coze',
       tokens: 8192,
       vision: true,
     },
     {
       displayName: 'GPT-4',
+      enabled: true,
       id: 'gpt-4',
       tokens: 32_768,
     },
@@ -109,6 +113,7 @@ const OpenAI: ModelProviderCard = {
     },
     {
       displayName: 'GPT-4 ALL',
+      enabled: true,
       files: true,
       id: 'gpt-4-all',
       tokens: 32_768,
@@ -116,17 +121,20 @@ const OpenAI: ModelProviderCard = {
     },
     {
       displayName: 'Coze-4 Net',
+      enabled: true,
       id: 'gpt-4-coze',
       tokens: 8192,
       vision: true,
     },
     {
       displayName: 'Bing-4 32K',
+      enabled: true,
       id: 'gpt-4-32k-bing',
       tokens: 8192,
     },
     {
       displayName: 'Bing-4 Vision',
+      enabled: true,
       id: 'gpt-4-vision-bing',
       tokens: 8192,
       vision: true,
@@ -141,12 +149,14 @@ const OpenAI: ModelProviderCard = {
     },
     {
       displayName: 'Step-V1',
+      enabled: true,
       id: 'llava-step-v1',
       tokens: 32_768,
       vision: true,
     },
     {
       displayName: 'Step-V1 Vision',
+      enabled: true,
       files: true,
       id: 'llava-step-v1-vision',
       tokens: 32_768,
@@ -154,12 +164,14 @@ const OpenAI: ModelProviderCard = {
     },
     {
       displayName: 'Moonshot-V1',
+      enabled: true,
       id: 'moonshot-v1',
       tokens: 32_768,
       vision: true,
     },
     {
       displayName: 'Moonshot-V1 Vision',
+      enabled: true,
       files: true,
       id: 'moonshot-v1-vision',
       tokens: 128_000,

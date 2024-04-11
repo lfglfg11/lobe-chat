@@ -2,12 +2,6 @@ import { ModelProviderCard } from '@/types/llm';
 
 const url = "https://gpts.ddaiai.com/open/gpts"
 
-async function get() {
-    const response = await fetch(url);
-    const data = await response.json();
-  
-    console.log(data);
-}
 // refs to: https://platform.openai.com/docs/models/gpt-4-and-gpt-4-turbo
 const OpenAI: ModelProviderCard = {
   chatModels: [

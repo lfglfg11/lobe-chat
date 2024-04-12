@@ -1,5 +1,4 @@
 import { Icon } from '@lobehub/ui';
-
 import { createStyles } from 'antd-style';
 import { FileImage, FileText, FileUpIcon } from 'lucide-react';
 import { rgba } from 'polished';
@@ -80,7 +79,7 @@ const DragUpload = memo(() => {
   const model = useSessionStore(agentSelectors.currentAgentModel);
 
   const enabledFiles = useGlobalStore((s) => {
-    const modeledFiles = modelProviderSelectors.modelEnabledFiles(model)(s);
+    const modeledFiles = modelProviderSelectors.isModelEnabledFiles(model)(s);
     return modeledFiles ?? false;
   });
 
@@ -88,6 +87,7 @@ const DragUpload = memo(() => {
     if (!fileList || fileList.length === 0) return;
 
     const pools = Array.from(fileList).map(async (file) => {
+      // skip none-file items
       if (!file.type.startsWith('image') && !enabledFiles) return;
       await uploadFile(file);
     });

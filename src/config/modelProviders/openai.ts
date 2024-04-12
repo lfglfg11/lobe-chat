@@ -192,7 +192,7 @@ const OpenAI: ModelProviderCard = {
       enabled: true,
       files: true,
       functionCall: false,
-      id: 'qwen-plus',
+      id: 'qwen-v1-vision',
       tokens: 32_768,
       vision: true,
     },

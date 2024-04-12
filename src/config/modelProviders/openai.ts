@@ -209,14 +209,12 @@ const OpenAI: ModelProviderCard = {
       enabled: true,
       id: 'pplx-detail',
       tokens: 8192,
-      vision: true,
     },
     {
       displayName: 'Metaso-Research',
       enabled: true,
       id: 'pplx-research',
       tokens: 8192,
-      vision: true,
     },
     {
       displayName: 'ChatGLM-V1',

@@ -209,7 +209,7 @@ const OpenAI: ModelProviderCard = {
       tokens: 8192,
     },
     {
-      displayName: 'Metaso-Research',
+      displayName: 'Metaso-Scholar',
       enabled: true,
       id: 'pplx-research',
       tokens: 8192,

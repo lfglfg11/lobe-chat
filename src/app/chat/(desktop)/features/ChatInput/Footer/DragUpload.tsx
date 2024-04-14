@@ -2,11 +2,12 @@ import { Icon } from '@lobehub/ui';
 import { createStyles } from 'antd-style';
 import { FileImage, FileText, FileUpIcon } from 'lucide-react';
 import { rgba } from 'polished';
-import { memo, useEffect, useRef, useState, useCallback } from 'react';
+import { memo, useEffect, useRef, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Center, Flexbox } from 'react-layout-kit';
-import { useGlobalStore } from '@/store/global';
+
 import { useFileStore } from '@/store/file';
+import { useGlobalStore } from '@/store/global';
 import { modelProviderSelectors } from '@/store/global/selectors';
 import { useSessionStore } from '@/store/session';
 import { agentSelectors } from '@/store/session/selectors';
@@ -78,22 +79,18 @@ const DragUpload = memo(() => {
 
   const model = useSessionStore(agentSelectors.currentAgentModel);
 
-  const enabledFiles = useGlobalStore((s) => {
-    const modeledFiles = modelProviderSelectors.isModelEnabledFiles(model)(s);
-    return modeledFiles ?? false;
-  });
+  const enabledFiles = useGlobalStore(modelProviderSelectors.isModelEnabledFiles(model)) ?? false;
 
-  const uploadImages = useCallback(async (fileList: FileList | undefined) => {
+  const uploadImages = async (fileList: FileList | undefined) => {
     if (!fileList || fileList.length === 0) return;
 
     const pools = Array.from(fileList).map(async (file) => {
-      // skip none-file items
       if (!file.type.startsWith('image') && !enabledFiles) return;
       await uploadFile(file);
     });
 
     await Promise.all(pools);
-  }, [enabledFiles, uploadFile]);
+  };
 
   const handleDragEnter = (e: DragEvent) => {
     e.preventDefault();
@@ -115,7 +112,7 @@ const DragUpload = memo(() => {
     }
   };
 
-  const handleDrop = useCallback(async (e: DragEvent) => {
+  const handleDrop = async (e: DragEvent) => {
     e.preventDefault();
     // reset counter
     dragCounter.current = 0;
@@ -128,15 +125,15 @@ const DragUpload = memo(() => {
 
     // upload files
     uploadImages(files);
-  }, [uploadImages]);
+  };
 
-  const handlePaste = useCallback((event: ClipboardEvent) => {
+  const handlePaste = (event: ClipboardEvent) => {
     // get files from clipboard
 
     const files = event.clipboardData?.files;
 
     uploadImages(files);
-  }, [uploadImages]);
+  };
 
 
   useEffect(() => {
@@ -153,7 +150,7 @@ const DragUpload = memo(() => {
       window.removeEventListener('drop', handleDrop);
       window.removeEventListener('paste', handlePaste);
     };
-  }, [handleDrop, handlePaste]);  
+  }, [handleDrop, handlePaste]);
 
   return (
     isDragging && (
@@ -177,5 +174,4 @@ const DragUpload = memo(() => {
 });
 
 export default DragUpload;
-
 

@@ -79,12 +79,13 @@ const DragUpload = memo(() => {
 
   const model = useSessionStore(agentSelectors.currentAgentModel);
 
-  const enabledFiles = useGlobalStore(modelProviderSelectors.isModelEnabledFiles(model)) ?? false;
+  const enabledFiles = useGlobalStore(modelProviderSelectors.isModelEnabledFiles(model));
 
   const uploadImages = async (fileList: FileList | undefined) => {
     if (!fileList || fileList.length === 0) return;
 
     const pools = Array.from(fileList).map(async (file) => {
+      // skip none-file items
       if (!file.type.startsWith('image') && !enabledFiles) return;
       await uploadFile(file);
     });

@@ -14,6 +14,7 @@ import {
   LobeBedrockAI,
   LobeGoogleAI,
   LobeGroq,
+  LobeMinimaxAI,
   LobeMistralAI,
   LobeMoonshotAI,
   LobeOllamaAI,
@@ -161,6 +162,11 @@ class AgentRuntime {
         break;
       }
 
+      case ModelProvider.Minimax: {
+        runtimeModel = this.initMinimax(payload);
+        break;
+      }
+
       case ModelProvider.Mistral: {
         runtimeModel = this.initMistral(payload);
         break;
@@ -266,6 +272,13 @@ class AgentRuntime {
     const apiKey = apiKeyManager.pick(payload?.apiKey || ANTHROPIC_API_KEY);
     const baseURL = payload?.endpoint || ANTHROPIC_PROXY_URL;
     return new LobeAnthropicAI({ apiKey, baseURL });
+  }
+
+  private static initMinimax(payload: JWTPayload) {
+    const { MINIMAX_API_KEY } = getServerConfig();
+    const apiKey = apiKeyManager.pick(payload?.apiKey || MINIMAX_API_KEY);
+
+    return new LobeMinimaxAI({ apiKey });
   }
 
   private static initMistral(payload: JWTPayload) {

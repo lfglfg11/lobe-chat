@@ -121,8 +121,7 @@ const isModelEnabledUpload = (id: string) => (s: GlobalStore) =>
 const isModelHasMaxToken = (id: string) => (s: GlobalStore) =>
   typeof getModelCardById(id)(s)?.tokens !== 'undefined';
 
-// 如若没找到模型的消耗token,则默认为8192
-const modelMaxToken = (id: string) => (s: GlobalStore) => getModelCardById(id)(s)?.tokens || 8192;
+const modelMaxToken = (id: string) => (s: GlobalStore) => getModelCardById(id)(s)?.tokens || 0;
 
 export const modelProviderSelectors = {
   defaultModelProviderList,

@@ -19,6 +19,8 @@ import {
   Tongyi,
   Wenxin,
   Yi,
+  ByteDance,
+  Bing
 } from '@lobehub/icons';
 import { memo } from 'react';
 
@@ -60,6 +62,8 @@ const ModelIcon = memo<ModelProviderIconProps>(({ model: originModel, size = 12 
   if (model.includes('spark')) return <Spark.Avatar size={size} />;
   if (model.includes('hunyuan')) return <Hunyuan.Avatar size={size} />;
   if (model.includes('abab')) return <Minimax.Avatar size={size} />;
+  if (model.includes('coze')) return <ByteDance.Avatar size={size} />;
+  if (model.includes('bing')) return <Bing.Avatar size={size} />;
 });
 
 export default ModelIcon;

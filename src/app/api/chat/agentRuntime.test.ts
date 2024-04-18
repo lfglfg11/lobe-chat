@@ -12,6 +12,7 @@ import {
   LobeAzureOpenAI,
   LobeBedrockAI,
   LobeGoogleAI,
+  LobeMinimaxAI,
   LobeMistralAI,
   LobeMoonshotAI,
   LobeOllamaAI,
@@ -44,6 +45,7 @@ vi.mock('@/config/server', () => ({
     OLLAMA_PROXY_URL: 'test-ollama-url',
     PERPLEXITY_API_KEY: 'test-perplexity-key',
     ANTHROPIC_API_KEY: 'test-anthropic-key',
+    MINIMAX_API_KEY: 'test-minimax-key',
     MISTRAL_API_KEY: 'test-mistral-key',
     OPENROUTER_API_KEY: 'test-openrouter-key',
     TOGETHERAI_API_KEY: 'test-togetherai-key',
@@ -290,6 +292,30 @@ describe('AgentRuntime', () => {
 
         // 假设 LobeAnthropicAI 是 Anthropic 提供者的实现类
         expect(runtime['_runtime']).toBeInstanceOf(LobeAnthropicAI);
+      });
+    });
+
+    describe('Minimax AI provider', () => {
+      it('should initialize correctly', async () => {
+        const jwtPayload: JWTPayload = { apiKey: 'user-minimax-key' };
+        const runtime = await AgentRuntime.initializeWithUserPayload(
+          ModelProvider.Minimax,
+          jwtPayload,
+        );
+
+        // 假设 LobeMinimaxAI 是 Minimax 提供者的实现类
+        expect(runtime['_runtime']).toBeInstanceOf(LobeMinimaxAI);
+      });
+
+      it('should initialize correctly without apiKey', async () => {
+        const jwtPayload: JWTPayload = {};
+        const runtime = await AgentRuntime.initializeWithUserPayload(
+          ModelProvider.Minimax,
+          jwtPayload,
+        );
+
+        // 假设 LobeMinimaxAI 是 Minimax 提供者的实现类
+        expect(runtime['_runtime']).toBeInstanceOf(LobeMinimaxAI);
       });
     });
 

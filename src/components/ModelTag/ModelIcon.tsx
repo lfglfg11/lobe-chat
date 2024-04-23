@@ -7,6 +7,7 @@ import {
   ByteDance,
   ChatGLM,
   Claude,
+  Copilot,
   Cohere,
   Dbrx,
   FishAudio,
@@ -28,8 +29,6 @@ import {
   Tongyi,
   Wenxin,
   ZeroOne,
-  Copilot,
-  ByteDance,
 } from '@lobehub/icons';
 import { memo } from 'react';
 

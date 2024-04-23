@@ -2,7 +2,7 @@
 
 import { ActionIcon, Grid, Icon } from '@lobehub/ui';
 import { createStyles } from 'antd-style';
-import { ArrowRight, Blocks, Bot, BrainCircuit, Eye, Images, Mic2 } from 'lucide-react';
+import { ArrowRight, Blocks, Bot, BrainCircuit, FileUp, Images, Mic2 } from 'lucide-react';
 import Link from 'next/link';
 import { memo } from 'react';
 import { Flexbox } from 'react-layout-kit';
@@ -33,8 +33,8 @@ const FeatureCards = memo(() => {
   const { styles } = useStyles();
   const cards = [
     {
-      icon: Eye,
-      title: '视觉识别',
+      icon: FileUp,
+      title: '文件识别',
       url: 'vision',
     },
     {

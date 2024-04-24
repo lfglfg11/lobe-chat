@@ -47,15 +47,25 @@ const ModelIcon = memo<ModelIconProps>(({ model, size = 12 }) => {
   if (model.includes('titan')) return <Aws size={size} />;
   if (model.includes('llama')) return <Meta size={size} />;
   if (model.includes('llava')) return <LLaVA size={size} />;
-  if (model.includes('bing')) return <Copilot size={size} />;
-  if (model.includes('coze')) return <ByteDance size={size} />;
+
+
   if (model.includes('gemini')) return <Gemini size={size} />;
   if (model.includes('gemma')) return <Gemma.Simple size={size} />;
   if (model.includes('moonshot')) return <Moonshot size={size} />;
   if (model.includes('qwen')) return <Tongyi size={size} />;
   if (model.includes('minmax')) return <Minimax size={size} />;
   if (model.includes('mistral') || model.includes('mixtral')) return <Mistral size={size} />;
-  if (model.includes('pplx') || model.includes('sonar')) return <Perplexity size={size} />;
+
+  // free-api 系列自定义模型  
+  if (model.includes('pplx') ||
+    model.includes('sonar') ||
+    model.includes('detail') ||
+    model.includes('concise') ||
+    model.includes('research')) return <Perplexity size={size} />;
+  if (model.includes('step')) return <LLaVA size={size} />;
+  if (model.includes('bing')) return <Copilot size={size} />;
+  if (model.includes('coze')) return <ByteDance size={size} />;
+
   if (model.includes('yi-')) return <ZeroOne size={size} />;
   if (model.startsWith('openrouter')) return <OpenRouter size={size} />; // only for Cinematika and Auto
   if (model.startsWith('openchat')) return <OpenChat size={size} />;

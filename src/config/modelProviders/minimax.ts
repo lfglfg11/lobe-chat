@@ -4,7 +4,7 @@ const Minimax: ModelProviderCard = {
   chatModels: [
     {
       description: '更复杂的格式化文本生成',
-      displayName: 'ABAB-6 Chat ',
+      displayName: 'ABAB-6 Chat',
       enabled: true,
       id: 'abab6-chat',
       tokens: 32_768,
@@ -18,7 +18,7 @@ const Minimax: ModelProviderCard = {
     },
     {
       description: '人设对话场景',
-      displayName: 'ABAB5.5-S',
+      displayName: 'ABAB-5.5 S',
       enabled: true,
       id: 'abab5.5s-chat',
       tokens: 8192,

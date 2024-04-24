@@ -238,7 +238,7 @@ const OpenAI: ModelProviderCard = {
     },
     {
       displayName: 'Metaso-Research-Net',
-      id: 'detail',
+      id: 'research',
       tokens: 8192,
     },
     {
@@ -269,7 +269,7 @@ const OpenAI: ModelProviderCard = {
       enabled: true,
       files: true,
       id: 'SparkDesk-v1-vision',
-      tokens: 8192,
+      tokens: 16_000,
       vision: true,
     },
     {

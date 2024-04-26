@@ -6,7 +6,7 @@
 
 ### 一. 直接如下图在设置中输入
    - **key 密钥** ：free-api 系列的请求refresh_token
-   - **接口地址**： free-api 系列的请求地址，一定要记得加**/v1**
+   - **接口地址**： free-api 系列的请求地址，一定要记得加 **/v1**
 
 ![image](https://github.com/Yanyutin753/lobe-chat/assets/132346501/0ae32055-3fb0-4366-a6dc-a245c23b24d9)
 

@@ -18,7 +18,7 @@ import {
   ZeroOneProviderCard,
   ZhiPuProviderCard,
 } from '@/config/modelProviders';
-import { GlobalStore } from '@/store/global';
+import { UserStore } from '@/store/user';
 import { ChatModelCard } from '@/types/llm';
 import { GlobalLLMConfig, GlobalLLMProviderKey } from '@/types/settings';
 import { setNamespace } from '@/utils/storeDebug';
@@ -58,7 +58,7 @@ export interface LLMSettingsAction {
 }
 
 export const llmSettingsSlice: StateCreator<
-  GlobalStore,
+  UserStore,
   [['zustand/devtools', never]],
   [],
   LLMSettingsAction

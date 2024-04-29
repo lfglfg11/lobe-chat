@@ -4,6 +4,40 @@
     "market": "Markt durchstöbern",
     "start": "Jetzt starten"
   },
+  "guide": {
+    "agents": {
+      "replaceBtn": "Ersetzen",
+      "title": "Neue Assistentenempfehlung:"
+    },
+    "defaultMessage": "Ich bin LobeChat, dein persönlicher intelligenter Assistent. Wie kann ich dir heute helfen?\nWenn du einen professionelleren oder maßgeschneiderten Assistenten benötigst, klicke auf `+`, um einen benutzerdefinierten Assistenten zu erstellen.",
+    "qa": {
+      "q01": "Was für ein Modell bist du und welche Funktionen hast du?",
+      "q02": "Wie schreibt man einen fesselnden Artikel oder eine Geschichte?",
+      "q03": "Wie bereitet man sich auf eine herausragende Präsentation oder einen Bericht vor?",
+      "q04": "Wie entwickelt man effektive Lerngewohnheiten und -strategien?",
+      "q05": "Wie richtet man einen effizienten Lernraum zu Hause ein?",
+      "q06": "Welche Lesestrategien helfen beim Verständnis komplexer Texte?",
+      "q07": "Wie bleibt man motiviert, trotz eines hektischen Lebens und Arbeit, weiter zu lernen?",
+      "q08": "Wie akzeptiert man Kritik elegant und lernt aus ihr?",
+      "q09": "Wie verbessert man die Effizienz beim Sprachenlernen?",
+      "q10": "Wie man mit Prüfungsangst umgeht und sie reduziert?",
+      "q11": "Wie erreicht man ein Gleichgewicht zwischen Arbeit, Studium und persönlichem Leben?",
+      "q12": "Wie kann man bei einem Vorstellungsgespräch hervorragend abschneiden?",
+      "q13": "Wie pflegt und erweitert man berufliche Netzwerke?",
+      "q14": "Wie optimiert man den Lebenslauf, um die Aufmerksamkeit potenzieller Arbeitgeber zu erregen?",
+      "q15": "Wie kann man eine neue Fähigkeit erwerben und ihre Nachhaltigkeit gewährleisten?"
+    },
+    "questions": {
+      "moreBtn": "Mehr erfahren",
+      "title": "Häufig gestellte Fragen:"
+    },
+    "welcome": {
+      "afternoon": "Guten Nachmittag",
+      "morning": "Guten Morgen",
+      "night": "Guten Abend",
+      "noon": "Guten Mittag"
+    }
+  },
   "header": "Willkommen",
   "pickAgent": "Oder wählen Sie eine Vorlage aus den folgenden Assistenten",
   "skip": "Erstellung überspringen",

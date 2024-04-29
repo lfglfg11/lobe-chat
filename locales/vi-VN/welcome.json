@@ -4,6 +4,40 @@
     "market": "Thăm Thị trường",
     "start": "Bắt Đầu Ngay"
   },
+  "guide": {
+    "agents": {
+      "replaceBtn": "Thay đổi",
+      "title": "Đề xuất trợ lý mới: "
+    },
+    "defaultMessage": "Tôi là LobeChat, trợ lý thông minh cá nhân của bạn. Hôm nay tôi có thể giúp gì cho bạn?\nNếu bạn cần một trợ lý chuyên nghiệp hoặc tùy chỉnh hơn, hãy nhấn vào `+` để tạo trợ lý cá nhân của bạn",
+    "qa": {
+      "q01": "Bạn là mô hình gì và có chức năng gì không?",
+      "q02": "Làm thế nào để viết một bài viết hoặc câu chuyện hấp dẫn?",
+      "q03": "Làm thế nào để chuẩn bị một bài thuyết trình hoặc báo cáo xuất sắc?",
+      "q04": "Làm thế nào để phát triển thói quen và chiến lược học tập hiệu quả?",
+      "q05": "Làm thế nào để tạo ra một không gian học tập hiệu quả tại nhà?",
+      "q06": "Chiến lược đọc nào có thể giúp hiểu được văn bản phức tạp?",
+      "q07": "Làm thế nào để duy trì động lực học tập trong cuộc sống và công việc bận rộn?",
+      "q08": "Làm thế nào để nhận những phê phán một cách tinh tế và học từ đó?",
+      "q09": "Làm thế nào để cải thiện hiệu suất học ngôn ngữ?",
+      "q10": "Làm thế nào để quản lý và giảm căng thẳng trong kỳ thi?",
+      "q11": "Làm thế nào để cân bằng công việc, học tập và cuộc sống cá nhân?",
+      "q12": "Làm thế nào để thể hiện xuất sắc trong phỏng vấn?",
+      "q13": "Làm thế nào để duy trì và phát triển mạng lưới chuyên nghiệp?",
+      "q14": "Làm thế nào để tối ưu hóa sơ yếu lý lịch cá nhân để thu hút sự chú ý của nhà tuyển dụng?",
+      "q15": "Làm thế nào để học một kỹ năng mới và duy trì nó trong thời gian dài?"
+    },
+    "questions": {
+      "moreBtn": "Tìm hiểu thêm",
+      "title": "Mọi người đều đặt câu hỏi: "
+    },
+    "welcome": {
+      "afternoon": "Chào buổi chiều",
+      "morning": "Chào buổi sáng",
+      "night": "Chào buổi tối",
+      "noon": "Chào buổi trưa"
+    }
+  },
   "header": "Chào Mừng",
   "pickAgent": "Hoặc chọn từ các mẫu đại lý sau",
   "skip": "Bỏ Qua Tạo",

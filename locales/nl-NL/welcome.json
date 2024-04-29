@@ -4,6 +4,40 @@
     "market": "Verken de markt",
     "start": "Nu beginnen"
   },
+  "guide": {
+    "agents": {
+      "replaceBtn": "Vervang een groep",
+      "title": "Nieuwe aanbeveling assistent: "
+    },
+    "defaultMessage": "Ik ben LobeChat, jouw persoonlijke slimme assistent. Waarmee kan ik je vandaag helpen?\nAls je een meer professionele of aangepaste assistent nodig hebt, klik dan op `+` om een aangepaste assistent te maken.",
+    "qa": {
+      "q01": "Welk model ben je en wat is je functie?",
+      "q02": "Hoe schrijf je een boeiend artikel of verhaal?",
+      "q03": "Hoe kun je je voorbereiden op een uitstekende presentatie of rapport?",
+      "q04": "Hoe ontwikkel je effectieve leer- en studiegewoonten?",
+      "q05": "Hoe creëer je een efficiënte leeromgeving thuis?",
+      "q06": "Welke leesstrategieën kunnen helpen bij het begrijpen van complexe teksten?",
+      "q07": "Hoe behoud je de motivatie om te leren in een druk leven en werk?",
+      "q08": "Hoe neem je elegant kritiek aan en leer je ervan?",
+      "q09": "Hoe kun je de efficiëntie van het leren van talen verbeteren?",
+      "q10": "Hoe kun je examenstress beheren en verminderen?",
+      "q11": "Hoe kun je werk, studie en persoonlijk leven in balans houden?",
+      "q12": "Hoe presteer je uitstekend tijdens een sollicitatiegesprek?",
+      "q13": "Hoe onderhoud en ontwikkel je professionele netwerken?",
+      "q14": "Hoe optimaliseer je je cv om de aandacht van werkgevers te trekken?",
+      "q15": "Hoe leer je een nieuwe vaardigheid en behoud je deze op de lange termijn?"
+    },
+    "questions": {
+      "moreBtn": "Meer informatie",
+      "title": "Veelgestelde vragen: "
+    },
+    "welcome": {
+      "afternoon": "Goedemiddag",
+      "morning": "Goedemorgen",
+      "night": "Goedenavond",
+      "noon": "Goedemiddag"
+    }
+  },
   "header": "Welkom",
   "pickAgent": "Of kies een assistent-sjabloon uit de onderstaande opties",
   "skip": "Overslaan bij het maken",

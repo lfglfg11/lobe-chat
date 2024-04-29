@@ -4,6 +4,40 @@
     "market": "Visit Market",
     "start": "Start Now"
   },
+  "guide": {
+    "agents": {
+      "replaceBtn": "Replace Batch",
+      "title": "New Assistant Recommendations:"
+    },
+    "defaultMessage": "I'm LobeChat, your personal intelligent assistant. How can I assist you today?\nIf you need a more professional or customized assistant, click on `+` to create a custom assistant.",
+    "qa": {
+      "q01": "What model are you and what functions do you have?",
+      "q02": "How to write a captivating article or story?",
+      "q03": "How to prepare for a great speech or presentation?",
+      "q04": "How to develop effective study habits and strategies?",
+      "q05": "How to create an efficient study space at home?",
+      "q06": "What reading strategies can help to understand complex texts?",
+      "q07": "How to maintain motivation for learning in a busy life and work?",
+      "q08": "How to gracefully accept criticism and learn from it?",
+      "q09": "How to improve language learning efficiency?",
+      "q10": "How to manage and reduce exam anxiety?",
+      "q11": "How to balance work, study, and personal life?",
+      "q12": "How to excel in an interview?",
+      "q13": "How to maintain and develop professional networks?",
+      "q14": "How to optimize a resume to attract employer's attention?",
+      "q15": "How to acquire a new skill and sustain it?"
+    },
+    "questions": {
+      "moreBtn": "Learn More",
+      "title": "Frequently Asked Questions:"
+    },
+    "welcome": {
+      "afternoon": "Good Afternoon",
+      "morning": "Good Morning",
+      "night": "Good Evening",
+      "noon": "Good Noon"
+    }
+  },
   "header": "Welcome",
   "pickAgent": "Or choose from the following agent templates",
   "skip": "Skip Creation",

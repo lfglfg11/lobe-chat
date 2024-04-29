@@ -4,6 +4,40 @@
     "market": "Esplora il mercato",
     "start": "Inizia subito"
   },
+  "guide": {
+    "agents": {
+      "replaceBtn": "Cambia gruppo",
+      "title": "Nuova raccomandazione assistente:"
+    },
+    "defaultMessage": "Sono LobeChat, il tuo assistente intelligente personale. Come posso aiutarti oggi?\nSe hai bisogno di un assistente più professionale o personalizzato, clicca su `+` per creare un assistente personalizzato.",
+    "qa": {
+      "q01": "Che tipo di modello sei e che funzioni hai?",
+      "q02": "Come scrivere un articolo o una storia avvincente?",
+      "q03": "Come preparare una presentazione o una relazione eccellente?",
+      "q04": "Come sviluppare abitudini e strategie di studio efficaci?",
+      "q05": "Come creare uno spazio di studio efficiente a casa?",
+      "q06": "Quali strategie di lettura possono aiutare a comprendere testi complessi?",
+      "q07": "Come mantenere la motivazione allo studio in una vita e un lavoro frenetici?",
+      "q08": "Come accettare critiche in modo elegante e imparare da esse?",
+      "q09": "Come migliorare l'efficienza nell'apprendimento di una lingua?",
+      "q10": "Come gestire e ridurre l'ansia da esame?",
+      "q11": "Come bilanciare lavoro, studio e vita personale?",
+      "q12": "Come eccellere in un colloquio di lavoro?",
+      "q13": "Come mantenere e sviluppare una rete professionale?",
+      "q14": "Come ottimizzare il proprio curriculum per attirare l'attenzione dei datori di lavoro?",
+      "q15": "Come acquisire una nuova abilità e mantenerla nel tempo?"
+    },
+    "questions": {
+      "moreBtn": "Scopri di più",
+      "title": "Domande frequenti:"
+    },
+    "welcome": {
+      "afternoon": "Buon pomeriggio",
+      "morning": "Buongiorno",
+      "night": "Buonasera",
+      "noon": "Buon pranzo"
+    }
+  },
   "header": "Benvenuti",
   "pickAgent": "Oppure scegli tra i seguenti modelli di assistente",
   "skip": "Salta creazione",

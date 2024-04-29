@@ -4,6 +4,40 @@
     "market": "Parcourir le marché",
     "start": "Démarrer maintenant"
   },
+  "guide": {
+    "agents": {
+      "replaceBtn": "Remplacer",
+      "title": "Nouvelles recommandations d'assistants :"
+    },
+    "defaultMessage": "Je suis LobeChat, votre assistant intelligent personnel. Comment puis-je vous aider aujourd'hui ?\nSi vous avez besoin d'une assistance plus professionnelle ou personnalisée, cliquez sur `+` pour créer un assistant personnalisé.",
+    "qa": {
+      "q01": "Quel modèle êtes-vous et quelles sont vos fonctionnalités ?",
+      "q02": "Comment écrire un article ou une histoire captivante ?",
+      "q03": "Comment préparer une présentation ou un rapport remarquable ?",
+      "q04": "Comment développer de bonnes habitudes et stratégies d'apprentissage ?",
+      "q05": "Comment créer un espace d'apprentissage efficace à la maison ?",
+      "q06": "Quelles stratégies de lecture peuvent aider à comprendre des textes complexes ?",
+      "q07": "Comment maintenir sa motivation à apprendre dans une vie et un travail occupés ?",
+      "q08": "Comment accepter élégamment la critique et en tirer des enseignements ?",
+      "q09": "Comment améliorer son efficacité en apprentissage des langues ?",
+      "q10": "Comment gérer et réduire l'anxiété liée aux examens ?",
+      "q11": "Comment équilibrer travail, études et vie personnelle ?",
+      "q12": "Comment se distinguer lors d'un entretien d'embauche ?",
+      "q13": "Comment entretenir et développer son réseau professionnel ?",
+      "q14": "Comment optimiser son CV pour attirer l'attention des employeurs ?",
+      "q15": "Comment acquérir une nouvelle compétence et la maintenir sur le long terme ?"
+    },
+    "questions": {
+      "moreBtn": "En savoir plus",
+      "title": "Questions fréquentes :"
+    },
+    "welcome": {
+      "afternoon": "Bon après-midi",
+      "morning": "Bonjour",
+      "night": "Bonsoir",
+      "noon": "Bonjour"
+    }
+  },
   "header": "Bienvenue",
   "pickAgent": "Ou choisissez parmi les modèles d'agent suivants",
   "skip": "Passer",

@@ -4,6 +4,40 @@
     "market": "Przeglądaj rynek",
     "start": "Rozpocznij teraz"
   },
+  "guide": {
+    "agents": {
+      "replaceBtn": "Zmień",
+      "title": "Nowe zalecenia asystenta:"
+    },
+    "defaultMessage": "Jestem LobeChat, Twoim osobistym inteligentnym asystentem. Jak mogę Ci dzisiaj pomóc?\nJeśli potrzebujesz bardziej profesjonalnej lub spersonalizowanej pomocy, kliknij `+` aby stworzyć niestandardowego asystenta.",
+    "qa": {
+      "q01": "Jaki jesteś modelem i jakie masz funkcje?",
+      "q02": "Jak napisać interesujący artykuł lub opowieść?",
+      "q03": "Jak przygotować się do doskonałej prezentacji lub raportu?",
+      "q04": "Jak rozwijać skuteczne nawyki i strategie nauki?",
+      "q05": "Jak stworzyć efektywną przestrzeń do nauki w domu?",
+      "q06": "Jakie strategie czytania pomagają zrozumieć skomplikowane teksty?",
+      "q07": "Jak utrzymać motywację do nauki w ciągu intensywnego życia i pracy?",
+      "q08": "Jak elegancko przyjmować krytykę i uczyć się z niej?",
+      "q09": "Jak zwiększyć efektywność nauki języka?",
+      "q10": "Jak zarządzać i redukować stres związany z egzaminami?",
+      "q11": "Jak zbalansować pracę, naukę i życie osobiste?",
+      "q12": "Jak osiągnąć doskonałe wyniki na rozmowie kwalifikacyjnej?",
+      "q13": "Jak utrzymywać i rozwijać sieć kontaktów zawodowych?",
+      "q14": "Jak zoptymalizować swoje CV, aby przyciągnąć uwagę pracodawcy?",
+      "q15": "Jak zdobywać i utrzymywać nowe umiejętności?"
+    },
+    "questions": {
+      "moreBtn": "Dowiedz się więcej",
+      "title": "Najczęściej zadawane pytania:"
+    },
+    "welcome": {
+      "afternoon": "Dzień dobry",
+      "morning": "Dzień dobry",
+      "night": "Dobry wieczór",
+      "noon": "Dzień dobry"
+    }
+  },
   "header": "Witaj",
   "pickAgent": "Wybierz szablon asystenta lub kontynuuj",
   "skip": "Pomiń tworzenie",

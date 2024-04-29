@@ -4,6 +4,40 @@
     "market": "Pazara Göz At",
     "start": "Başla"
   },
+  "guide": {
+    "agents": {
+      "replaceBtn": "Başka bir grup",
+      "title": "Yeni Asistan Önerileri:"
+    },
+    "defaultMessage": "Ben LobeChat, senin kişisel akıllı asistanınım. Bugün sana nasıl yardımcı olabilirim?\nDaha profesyonel veya özelleştirilmiş bir asistana ihtiyacın varsa, özel bir asistan oluşturmak için `+` tıklayabilirsin.",
+    "qa": {
+      "q01": "Hangi model olduğunuz ve ne tür fonksiyonlarınız olduğu?",
+      "q02": "İlgi çekici bir makale veya hikaye nasıl yazılır?",
+      "q03": "Başarılı bir sunum veya rapor için nasıl hazırlanılır?",
+      "q04": "Etkili öğrenme alışkanlıkları ve stratejileri nasıl geliştirilir?",
+      "q05": "Evde verimli bir öğrenme alanı nasıl oluşturulur?",
+      "q06": "Karmaşık metinleri anlamak için hangi okuma stratejileri kullanılabilir?",
+      "q07": "Yoğun hayat ve iş temposunda nasıl öğrenme motivasyonu sağlanır?",
+      "q08": "Eleştirileri zarif bir şekilde kabul etmek ve bunlardan nasıl öğrenmek mümkün olur?",
+      "q09": "Dil öğrenme verimliliği nasıl artırılır?",
+      "q10": "Sınav kaygısını yönetmek ve azaltmak için nasıl bir yol izlenir?",
+      "q11": "İş, öğrenme ve kişisel yaşam nasıl denge sağlanır?",
+      "q12": "Mülakatta nasıl başarılı bir performans sergilenir?",
+      "q13": "İş ilişkileri nasıl sürdürülür ve geliştirilir?",
+      "q14": "İşverenin dikkatini çekmek için kişisel özgeçmiş nasıl optimize edilir?",
+      "q15": "Yeni bir beceri nasıl öğrenilir ve sürdürülebilir kılınır?"
+    },
+    "questions": {
+      "moreBtn": "Daha Fazla Bilgi",
+      "title": "Herkesin Sorduğu Sorular:"
+    },
+    "welcome": {
+      "afternoon": "İyi akşamlar",
+      "morning": "Günaydın",
+      "night": "İyi geceler",
+      "noon": "Tünaydın"
+    }
+  },
   "header": "Hoş geldiniz",
   "pickAgent": "Veya aşağıdaki asistan şablonlarından birini seçin",
   "skip": "Atla",

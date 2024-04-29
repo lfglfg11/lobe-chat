@@ -7,6 +7,7 @@ import isEqual from 'fast-deep-equal';
 import { RefreshCw } from 'lucide-react';
 import Link from 'next/link';
 import { memo, useMemo, useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import { Flexbox } from 'react-layout-kit';
 
 import { agentMarketSelectors, useMarketStore } from '@/store/market';
@@ -18,15 +19,16 @@ const useStyles = createStyles(({ css, token }) => ({
     position: relative;
 
     height: 100%;
+    min-height: 110px;
     padding: 16px;
 
     color: ${token.colorText};
 
-    background: ${token.colorFillTertiary};
+    background: ${token.colorBgContainer};
     border-radius: ${token.borderRadius}px;
 
     &:hover {
-      background: ${token.colorFillSecondary};
+      background: ${token.colorBgElevated};
     }
   `,
   cardDesc: css`
@@ -47,6 +49,7 @@ const useStyles = createStyles(({ css, token }) => ({
 }));
 
 const AgentsSuggest = memo(() => {
+  const { t } = useTranslation('welcome');
   const [sliceStart, setSliceStart] = useState(0);
   const useFetchAgentList = useMarketStore((s) => s.useFetchAgentList);
   const { isLoading } = useFetchAgentList();
@@ -87,12 +90,12 @@ const AgentsSuggest = memo(() => {
   return (
     <Flexbox gap={8} width={'100%'}>
       <Flexbox align={'center'} horizontal justify={'space-between'}>
-        <div className={styles.title}>新增助理推荐：</div>
+        <div className={styles.title}>{t('guide.agents.title')}</div>
         <ActionIcon
           icon={RefreshCw}
           onClick={handleRefresh}
           size={{ blockSize: 24, fontSize: 14 }}
-          title={'换一批'}
+          title={t('guide.agents.replaceBtn')}
         />
       </Flexbox>
       <Grid gap={8} rows={2}>

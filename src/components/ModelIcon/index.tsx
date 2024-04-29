@@ -46,9 +46,7 @@ const ModelIcon = memo<ModelProviderIconProps>(({ model: originModel, size = 12 
   // currently supported models, maybe not in its own provider
   if (model.includes('gpt-3')) return <OpenAI.Avatar size={size} type={'gpt3'} />;
   if (model.includes('gpt-4')) return <OpenAI.Avatar size={size} type={'gpt4'} />;
-  if (model.startsWith('glm') ||
-    model.includes('chatglm'))
-    return <ChatGLM.Avatar size={size} />;
+  if (model.startsWith('glm') || model.includes('chatglm')) return <ChatGLM.Avatar size={size} />;
   if (model.includes('claude')) return <Claude.Avatar size={size} />;
   if (model.includes('titan')) return <Aws.Avatar size={size} />;
   if (model.includes('llama')) return <Meta.Avatar size={size} />;
@@ -83,13 +81,11 @@ const ModelIcon = memo<ModelProviderIconProps>(({ model: originModel, size = 12 
   if (model.includes('baichuan'))
     return <Baichuan.Avatar background={Baichuan.colorPrimary} size={size} />;
   if (model.includes('rwkv')) return <Rwkv.Avatar size={size} />;
-  if (model.includes('ernie'))
-    return <Wenxin.Avatar size={size} />;
+  if (model.includes('ernie')) return <Wenxin.Avatar size={size} />;
   if (model.includes('spark')) return <Spark.Avatar size={size} />;
   if (model.includes('hunyuan')) return <Hunyuan.Avatar size={size} />;
   // ref https://github.com/fishaudio/Bert-VITS2/blob/master/train_ms.py#L702
-  if (model.startsWith('d_') ||
-    model.startsWith('g_') || model.startsWith('wd_'))
+  if (model.startsWith('d_') || model.startsWith('g_') || model.startsWith('wd_'))
     return <FishAudio.Avatar size={size} />;
   if (model.includes('skylark')) return <ByteDance.Avatar size={size} />;
 

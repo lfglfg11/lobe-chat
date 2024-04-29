@@ -8,6 +8,7 @@ import {
   LobeBedrockAI,
   LobeGoogleAI,
   LobeGroq,
+  LobeMinimaxAI,
   LobeMistralAI,
   LobeMoonshotAI,
   LobeOllamaAI,
@@ -131,6 +132,13 @@ describe('initAgentRuntimeWithUserPayload method', () => {
       expect(runtime['_runtime']).toBeInstanceOf(LobeAnthropicAI);
     });
 
+    it('Minimax AI provider: with apikey', async () => {
+      const jwtPayload: JWTPayload = { apiKey: 'user-minimax-key' };
+      const runtime = await initAgentRuntimeWithUserPayload(ModelProvider.Minimax, jwtPayload);
+      expect(runtime).toBeInstanceOf(AgentRuntime);
+      expect(runtime['_runtime']).toBeInstanceOf(LobeMinimaxAI);
+    });
+
     it('Mistral AI provider: with apikey', async () => {
       const jwtPayload: JWTPayload = { apiKey: 'user-mistral-key' };
       const runtime = await initAgentRuntimeWithUserPayload(ModelProvider.Mistral, jwtPayload);
@@ -245,6 +253,14 @@ describe('initAgentRuntimeWithUserPayload method', () => {
 
       // 假设 LobeAnthropicAI 是 Anthropic 提供者的实现类
       expect(runtime['_runtime']).toBeInstanceOf(LobeAnthropicAI);
+    });
+
+    it('Minimax AI provider: without apikey', async () => {
+      const jwtPayload = {};
+      const runtime = await initAgentRuntimeWithUserPayload(ModelProvider.Minimax, jwtPayload);
+
+      // 假设 LobeMistralAI 是 Mistral 提供者的实现类
+      expect(runtime['_runtime']).toBeInstanceOf(LobeMinimaxAI);
     });
 
     it('Mistral AI provider: without apikey', async () => {

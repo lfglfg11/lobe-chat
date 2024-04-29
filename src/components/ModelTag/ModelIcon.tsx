@@ -54,6 +54,7 @@ const ModelIcon = memo<ModelIconProps>(({ model, size = 12 }) => {
   if (model.includes('moonshot')) return <Moonshot size={size} />;
   if (model.includes('qwen')) return <Tongyi size={size} />;
   if (model.includes('minmax')) return <Minimax size={size} />;
+  if (model.includes('abab')) return <Minimax size={size} />;
   if (model.includes('mistral') || model.includes('mixtral')) return <Mistral size={size} />;
 
   // free-api 系列自定义模型  

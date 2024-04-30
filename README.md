@@ -59,4 +59,4 @@ services:
 
 ### 四. 更多lobe-chat设置
 
-[lobe-chat的设置](https://lobehub.com/zh/docs/self-hosting/environment-variables)
+[设置](https://lobehub.com/zh/docs/self-hosting/environment-variables)

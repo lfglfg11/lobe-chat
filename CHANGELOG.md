@@ -2,6 +2,56 @@
 
 # Changelog
 
+### [Version 0.151.9](https://github.com/lobehub/lobe-chat/compare/v0.151.8...v0.151.9)
+
+<sup>Released on **2024-04-30**</sup>
+
+#### 🐛 Bug Fixes
+
+- **misc**: Minimax truncationed output.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's fixed
+
+- **misc**: Minimax truncationed output, closes [#2308](https://github.com/lobehub/lobe-chat/issues/2308) ([488f319](https://github.com/lobehub/lobe-chat/commit/488f319))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
+### [Version 0.151.8](https://github.com/lobehub/lobe-chat/compare/v0.151.7...v0.151.8)
+
+<sup>Released on **2024-04-30**</sup>
+
+#### ♻ Code Refactoring
+
+- **misc**: Move NavBar to `[@nav](https://github.com/nav)` slot route.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### Code refactoring
+
+- **misc**: Move NavBar to `[@nav](https://github.com/nav)` slot route, closes [#2306](https://github.com/lobehub/lobe-chat/issues/2306) ([aee7231](https://github.com/lobehub/lobe-chat/commit/aee7231))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
 ### [Version 0.151.7](https://github.com/lobehub/lobe-chat/compare/v0.151.6...v0.151.7)
 
 <sup>Released on **2024-04-30**</sup>

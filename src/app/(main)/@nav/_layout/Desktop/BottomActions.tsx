@@ -14,8 +14,6 @@ export interface BottomActionProps {
 
 const BottomActions = memo<BottomActionProps>(({ tab }) => {
   const { t } = useTranslation('common');
-  // 阻止更新弹窗
-  const closeNewVersion = false;
 
   return (
     <>

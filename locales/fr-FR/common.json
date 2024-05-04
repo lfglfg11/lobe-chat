@@ -140,7 +140,7 @@
   "tab": {
     "chat": "Conversation",
     "market": "Découvrir",
-    "me": "我",
+    "me": "moi",
     "setting": "Paramètre"
   },
   "telemetry": {
@@ -160,15 +160,16 @@
   },
   "userPanel": {
     "billing": "Gestion de la facturation",
-    "discord": "Support communautaire",
+    "defaultNickname": "Utilisateur de la version communautaire",
+    "discord": "Support de la communauté",
     "docs": "Documentation d'utilisation",
     "email": "Support par e-mail",
     "feedback": "Retours et suggestions",
     "help": "Centre d'aide",
+    "moveGuide": "Le bouton de configuration a été déplacé ici",
     "plans": "Forfaits d'abonnement",
     "profile": "Gestion du compte",
     "setting": "Paramètres de l'application",
-    "usages": "Statistiques d'utilisation",
-    "warn": "Cette entrée sera bientôt supprimée. Veuillez accéder à ce menu en cliquant sur l'avatar en haut à gauche."
+    "usages": "Statistiques d'utilisation"
   }
 }

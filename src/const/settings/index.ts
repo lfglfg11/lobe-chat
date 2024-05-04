@@ -39,7 +39,7 @@ export const DEFAUTT_AGENT_TTS_CONFIG: LobeAgentTTSConfig = {
   sttLocale: 'auto',
   ttsService: 'openai',
   voice: {
-    openai: process.env.OPENAI_VOICE || 'alloy',
+    openai: process.env.NEXT_PUBLIC_OPENAI_VOICE || 'alloy',
   },
 };
 

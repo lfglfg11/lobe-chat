@@ -273,6 +273,21 @@ const OpenAI: ModelProviderCard = {
       vision: true,
     },
     {
+      displayName: 'HaiLUO-V1 Net',
+      enabled: true,
+      id: 'abab-v1',
+      tokens: 8192,
+      vision: true,
+    },
+    {
+      displayName: 'HaiLUO-V1 Vision',
+      enabled: true,
+      files: true,
+      id: 'abab-v1-vision',
+      tokens: 16_000,
+      vision: true,
+    },
+    {
       displayName: 'GPTS Scholar',
       files: true,
       functionCall: false,

@@ -28,7 +28,7 @@ const Google: ModelProviderCard = {
     },
     {
       description: 'The best image understanding model to handle a broad range of applications',
-      displayName: 'Gemini 1.0 Pro Vision',
+      displayName: 'Gemini 1.0 Pro（识图）',
       id: 'gemini-1.0-pro-vision-latest',
       maxOutput: 4096,
       tokens: 12_288 + 4096,
@@ -36,7 +36,7 @@ const Google: ModelProviderCard = {
     },
     {
       description: 'The best image understanding model to handle a broad range of applications',
-      displayName: 'Gemini 1.0 Pro Vision',
+      displayName: 'Gemini 1.0 Pro（识图）',
       enabled: true,
       id: 'gemini-pro-vision',
       maxOutput: 4096,

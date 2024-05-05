@@ -6,7 +6,7 @@ const Anthropic: ModelProviderCard = {
     {
       description:
         'Ideal balance of intelligence and speed for enterprise workloads. Maximum utility at a lower price, dependable, balanced for scaled deployments',
-      displayName: 'Claude 3 (中杯)',
+      displayName: 'Claude 3（中杯）',
       enabled: true,
       id: 'claude-3-sonnet-20240229',
       maxOutput: 4096,
@@ -16,7 +16,7 @@ const Anthropic: ModelProviderCard = {
     {
       description:
         'Most powerful model for highly complex tasks. Top-level performance, intelligence, fluency, and understanding',
-      displayName: 'Claude 3 (大杯)',
+      displayName: 'Claude 3（大杯）',
       enabled: true,
       id: 'claude-3-opus-20240229',
       maxOutput: 4096,

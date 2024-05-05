@@ -11,7 +11,7 @@ const OpenAI: ModelProviderCard = {
       tokens: 16_385,
     },
     {
-      displayName: 'GPT-4 Copilot',
+      displayName: 'GPT-4（Copilot）',
       enabled: true,
       id: 'gpt-4',
       tokens: 32_768,
@@ -101,7 +101,7 @@ const OpenAI: ModelProviderCard = {
       vision: true,
     },
     {
-      displayName: 'GPT-4 网页版',
+      displayName: 'GPT-4（网页版）',
       enabled: true,
       files: true,
       id: 'gpt-4-all',

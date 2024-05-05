@@ -5,14 +5,14 @@ const Minimax: ModelProviderCard = {
   chatModels: [
     {
       description: '复杂场景，例如应用题计算、科学计算等场景',
-      displayName: 'abab6.5',
+      displayName: 'ABAB-6.5 Chat',
       enabled: true,
       id: 'abab6.5-chat',
       tokens: 8192,
     },
     {
       description: '通用场景',
-      displayName: 'abab6.5s',
+      displayName: 'ABAB-6.5 S',
       enabled: true,
       id: 'abab6.5s-chat',
       tokens: 245_760,

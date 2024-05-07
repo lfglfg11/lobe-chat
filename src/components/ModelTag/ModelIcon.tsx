@@ -29,6 +29,7 @@ import {
   Tongyi,
   Wenxin,
   ZeroOne,
+  DeepMind
 } from '@lobehub/icons';
 import { memo } from 'react';
 
@@ -66,6 +67,7 @@ const ModelIcon = memo<ModelIconProps>(({ model, size = 12 }) => {
   if (model.includes('step')) return <LLaVA size={size} />;
   if (model.includes('bing')) return <Copilot size={size} />;
   if (model.includes('coze')) return <ByteDance size={size} />;
+  if (model.includes('deep')) return <DeepMind.Avatar size={size} />;
 
   if (model.includes('yi-')) return <ZeroOne size={size} />;
   if (model.startsWith('openrouter')) return <OpenRouter size={size} />; // only for Cinematika and Auto

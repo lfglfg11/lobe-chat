@@ -196,8 +196,9 @@ const OpenAI: ModelProviderCard = {
       tokens: 8192,
     },
     {
-      displayName: '字节跳动4.0（文件分析）',
+      displayName: '字节跳动4.0（文本分析）',
       enabled: true,
+      files: true,
       id: 'coze-4-vision',
       tokens: 8192,
       vision: true,
@@ -336,13 +337,13 @@ const OpenAI: ModelProviderCard = {
       vision: true,
     },
     {
-      displayName: 'Deepseek（Chat）',
+      displayName: 'Deepseek（对话）',
       enabled: true,
       id: 'deepseek-chat',
       tokens: 32_768,
     },
     {
-      displayName: 'Deepseek（Coder）',
+      displayName: 'Deepseek（代码）',
       enabled: true,
       id: 'deepseek-coder',
       tokens: 16_385,

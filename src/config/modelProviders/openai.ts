@@ -282,6 +282,7 @@ const OpenAI: ModelProviderCard = {
     },
     {
       displayName: 'GPTS 学术写手',
+      enabled: true,
       files: true,
       functionCall: false,
       id: 'gpt-4-gizmo-g-kZ0eYXlJe',
@@ -290,6 +291,7 @@ const OpenAI: ModelProviderCard = {
     },
     {
       displayName: 'GPTS 共识助手',
+      enabled: true,
       files: true,
       functionCall: false,
       id: 'gpt-4-gizmo-g-bo0FiWLY7',
@@ -298,6 +300,7 @@ const OpenAI: ModelProviderCard = {
     },
     {
       displayName: 'GPTS LOGO设计',
+      enabled: true,
       files: true,
       functionCall: false,
       id: 'gpt-4-gizmo-g-gFt1ghYJl',
@@ -306,6 +309,7 @@ const OpenAI: ModelProviderCard = {
     },
     {
       displayName: 'GPTS 图像总结',
+      enabled: true,
       files: true,
       functionCall: false,
       id: 'gpt-4-gizmo-g-pmuQfob8d',
@@ -314,6 +318,7 @@ const OpenAI: ModelProviderCard = {
     },
     {
       displayName: 'GPTS 数据分析',
+      enabled: true,
       files: true,
       functionCall: false,
       id: 'gpt-4-gizmo-g-jBdvgesNC',
@@ -322,6 +327,7 @@ const OpenAI: ModelProviderCard = {
     },
     {
       displayName: 'GPTS 研究助手',
+      enabled: true,
       files: true,
       functionCall: false,
       id: 'gpt-4-gizmo-g-UfFxTDMxq',
@@ -330,6 +336,7 @@ const OpenAI: ModelProviderCard = {
     },
     {
       displayName: 'GPTS 代码专家',
+      enabled: true,
       files: true,
       functionCall: false,
       id: 'gpt-4-gizmo-g-2DQzU5UZl',

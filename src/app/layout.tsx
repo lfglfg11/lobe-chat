@@ -1,4 +1,3 @@
-import { SpeedInsights } from '@vercel/speed-insights/next';
 import { ResolvingViewport } from 'next';
 import { cookies } from 'next/headers';
 import { ReactNode } from 'react';
@@ -31,7 +30,6 @@ const RootLayout = async ({ children, modal }: RootLayoutProps) => {
           </AuthProvider>
         </GlobalProvider>
         <Analytics />
-        <SpeedInsights />
       </body>
     </html>
   );

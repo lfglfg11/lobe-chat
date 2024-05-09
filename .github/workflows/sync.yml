@@ -89,6 +89,8 @@ jobs:
 
   push_other_docker:
     name: Push Docker other image to Docker Hub
+    needs: sync_latest_from_upstream
+    if: ${{ success() }}
     runs-on: ubuntu-latest
     steps:
       - name: Check out the repo

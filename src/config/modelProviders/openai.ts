@@ -281,7 +281,7 @@ const OpenAI: ModelProviderCard = {
       vision: true,
     },
     {
-      displayName: 'GPTS 学术写手',
+      displayName: 'GPT-S（学术写手）',
       enabled: true,
       files: true,
       functionCall: false,
@@ -290,8 +290,7 @@ const OpenAI: ModelProviderCard = {
       vision: true,
     },
     {
-      displayName: 'GPTS 共识助手',
-      enabled: true,
+      displayName: 'GPT-S（共识助手）',
       files: true,
       functionCall: false,
       id: 'gpt-4-gizmo-g-bo0FiWLY7',
@@ -299,8 +298,7 @@ const OpenAI: ModelProviderCard = {
       vision: true,
     },
     {
-      displayName: 'GPTS LOGO设计',
-      enabled: true,
+      displayName: 'GPT-S（LOGO设计）',
       files: true,
       functionCall: false,
       id: 'gpt-4-gizmo-g-gFt1ghYJl',
@@ -308,7 +306,7 @@ const OpenAI: ModelProviderCard = {
       vision: true,
     },
     {
-      displayName: 'GPTS 图像总结',
+      displayName: 'GPT-S（图像总结）',
       enabled: true,
       files: true,
       functionCall: false,
@@ -317,7 +315,7 @@ const OpenAI: ModelProviderCard = {
       vision: true,
     },
     {
-      displayName: 'GPTS 数据分析',
+      displayName: 'GPT-S（数据分析）',
       enabled: true,
       files: true,
       functionCall: false,
@@ -326,7 +324,7 @@ const OpenAI: ModelProviderCard = {
       vision: true,
     },
     {
-      displayName: 'GPTS 研究助手',
+      displayName: 'GPT-S（研究助手）',
       enabled: true,
       files: true,
       functionCall: false,
@@ -335,7 +333,7 @@ const OpenAI: ModelProviderCard = {
       vision: true,
     },
     {
-      displayName: 'GPTS 代码专家',
+      displayName: 'GPT-S（代码专家）',
       enabled: true,
       files: true,
       functionCall: false,
@@ -344,13 +342,13 @@ const OpenAI: ModelProviderCard = {
       vision: true,
     },
     {
-      displayName: 'Deepseek（对话）',
+      displayName: 'DeepSeek（对话）',
       enabled: true,
       id: 'deepseek-chat',
       tokens: 32_768,
     },
     {
-      displayName: 'Deepseek（代码）',
+      displayName: 'DeepSeek（代码）',
       enabled: true,
       id: 'deepseek-coder',
       tokens: 16_385,

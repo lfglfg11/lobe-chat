@@ -37,7 +37,7 @@ const RootLayout = async ({ children, modal }: RootLayoutProps) => {
 
 export default RootLayout;
 
-export { default as metadata } from './metadata';
+export { generateMetadata } from './metadata';
 
 export const generateViewport = async (): ResolvingViewport => {
   const isMobile = isMobileDevice();

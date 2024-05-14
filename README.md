@@ -2,6 +2,7 @@
 
 本版本适配 [free-api](https://github.com/LLM-Red-Team) 全系列 ，并且同步最新的[lobe-chat](https://lobehub.com/zh/docs/self-hosting/environment-variables)版本
 
+
 ## 如何使用
 
 ### 一. 直接如下图在设置中输入
@@ -19,7 +20,6 @@ services:
     image: yangclivia/lobe-chat:latest
     container_name: lobe-chat
     restart: always
-    network_mode: host  
     environment:
       OPENAI_API_KEY: key 密钥
       OPENAI_PROXY_URL: 接口地址
@@ -28,7 +28,51 @@ services:
 
 <div align="center"><a name="readme-top"></a>
 
-[![][image-banner]][vercel-link]
+## 如何部署
+
+### Docker
+
+```bash
+docker run -d -p 3210:3210 \
+ -e DEBUG=prod \
+ -e OPENAI_API_KEY=key 密钥 \
+ -e OPENAI_PROXY_URL=接口地址 \
+ -e ACCESS_CODE=使用密码 \
+ --name lobe-chat \
+  yangclivia/lobe-chat:latest
+```
+
+
+#### Docker compose
+
+```bash
+version: '3' 
+services:  
+ lobe-chat:
+    ports:
+      - "3210:3210"
+    image: yangclivia/lobe-chat:latest
+    container_name: lobe-chat
+    # 如果你的lobe chat需要访问到宿主机网络的话
+    # network_mode: host  
+    restart: always
+    environment:
+      OPENAI_API_KEY: key 密钥
+      OPENAI_PROXY_URL: 接口地址
+      ACCESS_CODE: 使用密码
+
+
+```
+
+#### 其他部署
+
+##### 记得要先fork项目
+
+|           Deploy with Vercel            |                     Deploy with Zeabur                      |                     Deploy with Sealos                      |
+| :-------------------------------------: | :---------------------------------------------------------: | :---------------------------------------------------------: |
+| [![][deploy-button-image]][deploy-link] | [![][deploy-on-zeabur-button-image]][deploy-on-zeabur-link] | [![][deploy-on-sealos-button-image]][deploy-on-sealos-link] |
+
+
 
 # Lobe Chat
 

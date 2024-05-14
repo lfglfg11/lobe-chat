@@ -26,8 +26,6 @@ services:
       ACCESS_CODE: 使用密码
 ```
 
-<div align="center"><a name="readme-top"></a>
-
 ## 如何部署
 
 ### Docker
@@ -67,6 +65,9 @@ services:
 #### 其他部署
 
 ##### 记得要先fork项目
+
+<div align="center"><a name="readme-top"></a>
+  
 
 |           Deploy with Vercel            |                     Deploy with Zeabur                      |                     Deploy with Sealos                      |
 | :-------------------------------------: | :---------------------------------------------------------: | :---------------------------------------------------------: |

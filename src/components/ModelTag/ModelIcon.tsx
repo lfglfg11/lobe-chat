@@ -29,7 +29,6 @@ import {
   Stability,
   Tongyi,
   Wenxin,
-  DeepMind,
   Yi,
 } from '@lobehub/icons';
 import { memo } from 'react';
@@ -69,7 +68,6 @@ const ModelIcon = memo<ModelIconProps>(({ model, size = 12 }) => {
   if (model.includes('step')) return <LLaVA size={size} />;
   if (model.includes('bing')) return <Copilot size={size} />;
   if (model.includes('coze')) return <ByteDance size={size} />;
-  if (model.includes('deep')) return <DeepMind.Avatar size={size} />;
 
   if (model.includes('yi-')) return <Yi size={size} />;
   if (model.includes('pplx') || model.includes('sonar')) return <Perplexity size={size} />;

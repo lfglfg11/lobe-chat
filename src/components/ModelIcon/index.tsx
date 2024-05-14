@@ -30,7 +30,6 @@ import {
   Wenxin,
   Yi,
   Bing,
-  DeepMind
 } from '@lobehub/icons';
 import { memo } from 'react';
 
@@ -73,7 +72,6 @@ const ModelIcon = memo<ModelProviderIconProps>(({ model: originModel, size = 12 
   if (model.includes('coze')) return <ByteDance.Avatar size={size} />;
   if (model.includes('step')) return <LLaVA.Avatar size={size} />;
   if (model.includes('bing')) return <Bing.Avatar size={size} />;
-  if (model.includes('deep')) return <DeepMind.Avatar size={size} />;
   
   if (model.includes('yi-')) return <Yi.Avatar size={size} />;
   if (model.startsWith('openrouter')) return <OpenRouter.Avatar size={size} />; // only for Cinematika and Auto

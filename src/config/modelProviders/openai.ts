@@ -341,18 +341,6 @@ const OpenAI: ModelProviderCard = {
       tokens: 32_768,
       vision: true,
     },
-    {
-      displayName: 'DeepSeek（对话）',
-      enabled: true,
-      id: 'deepseek-chat',
-      tokens: 32_768,
-    },
-    {
-      displayName: 'DeepSeek（代码）',
-      enabled: true,
-      id: 'deepseek-coder',
-      tokens: 16_385,
-    },
   ],
   enabled: true,
   id: 'openai',

@@ -109,6 +109,15 @@ const OpenAI: ModelProviderCard = {
       vision: true,
     },
     {
+      displayName: 'GPT-4（青春版）',
+      enabled: true,
+      files: true,
+      functionCall: false,
+      id: 'gpt-4-o',
+      tokens: 32_768,
+      vision: true,
+    },
+    {
       description: 'GPT-4 Turbo 视觉版 (240409)',
       displayName: 'GPT-4 Turbo Vision (240409)',
       functionCall: true,

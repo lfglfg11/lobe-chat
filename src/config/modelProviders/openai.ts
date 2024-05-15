@@ -11,10 +11,10 @@ const OpenAI: ModelProviderCard = {
       tokens: 16_385,
     },
     {
-      displayName: 'GPT-4（Copilot）',
+      displayName: 'GPT-4',
       enabled: true,
       id: 'gpt-4',
-      tokens: 32_768,
+      tokens: 16_385,
     },
     {
       displayName: 'GPT-3.5 Turbo (0125)',

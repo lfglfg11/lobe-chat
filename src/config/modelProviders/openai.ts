@@ -152,7 +152,7 @@ const OpenAI: ModelProviderCard = {
       vision: true,
     },
     {
-      displayName: '月之暗面（联网）',
+      displayName: '月之暗面（OCR联网）',
       enabled: true,
       id: 'moonshot-v1',
       tokens: 16_000,

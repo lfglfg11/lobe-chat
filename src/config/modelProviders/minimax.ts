@@ -20,14 +20,6 @@ const Minimax: ModelProviderCard = {
       tokens: 245_760,
     },
     {
-      description: '复杂场景，例如应用题计算、科学计算等场景',
-      displayName: 'abab6.5',
-      enabled: true,
-      functionCall: true,
-      id: 'abab6.5-chat',
-      tokens: 8192,
-    },
-    {
       description: '更复杂的格式化文本生成',
       displayName: 'ABAB-6（复杂）',
       enabled: true,

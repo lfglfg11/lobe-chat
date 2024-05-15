@@ -47,6 +47,7 @@ const ZeroOne: ModelProviderCard = {
     {
       description: '基于Yi-Large超强模型的高阶服务，结合检索与生成技术提供精准答案，支持客⼾私有知识库（请联系客服申请）。',
       displayName: '零一万物（RAG）',
+      enabled: true,
       id: 'yi-large-rag',
       tokens: 16_384,
     },
@@ -60,13 +61,13 @@ const ZeroOne: ModelProviderCard = {
     {
       description: '「兼容版本模型」文本推理能力增强。',
       displayName: '零一万物（Preview）',
-      enabled: true,
       id: 'yi-large-preview',
       tokens: 16_384,
     },
     {
       description: '「兼容版本模型」实时信息获取，以及文本推理能力增强。',
-      displayName: '零一万物（RAG Preview）',
+      displayName: '零一万物（联网）',
+      enabled: true,
       id: 'yi-large-rag-preview',
       tokens: 16_384,
     },

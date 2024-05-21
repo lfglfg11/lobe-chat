@@ -311,7 +311,6 @@ const OpenAI: ModelProviderCard = {
     },
     {
       displayName: 'GPT-S（学术写手）',
-      enabled: true,
       files: true,
       functionCall: false,
       id: 'gpt-4-gizmo-g-kZ0eYXlJe',
@@ -320,7 +319,6 @@ const OpenAI: ModelProviderCard = {
     },
     {
       displayName: 'GPT-S（共识助手）',
-      files: true,
       functionCall: false,
       id: 'gpt-4-gizmo-g-bo0FiWLY7',
       tokens: 32_768,
@@ -328,7 +326,6 @@ const OpenAI: ModelProviderCard = {
     },
     {
       displayName: 'GPT-S（LOGO设计）',
-      files: true,
       functionCall: false,
       id: 'gpt-4-gizmo-g-gFt1ghYJl',
       tokens: 32_768,
@@ -336,7 +333,6 @@ const OpenAI: ModelProviderCard = {
     },
     {
       displayName: 'GPT-S（图像总结）',
-      enabled: true,
       files: true,
       functionCall: false,
       id: 'gpt-4-gizmo-g-pmuQfob8d',
@@ -345,7 +341,6 @@ const OpenAI: ModelProviderCard = {
     },
     {
       displayName: 'GPT-S（数据分析）',
-      enabled: true,
       files: true,
       functionCall: false,
       id: 'gpt-4-gizmo-g-jBdvgesNC',
@@ -354,7 +349,6 @@ const OpenAI: ModelProviderCard = {
     },
     {
       displayName: 'GPT-S（研究助手）',
-      enabled: true,
       files: true,
       functionCall: false,
       id: 'gpt-4-gizmo-g-UfFxTDMxq',
@@ -363,7 +357,6 @@ const OpenAI: ModelProviderCard = {
     },
     {
       displayName: 'GPT-S（代码专家）',
-      enabled: true,
       files: true,
       functionCall: false,
       id: 'gpt-4-gizmo-g-2DQzU5UZl',

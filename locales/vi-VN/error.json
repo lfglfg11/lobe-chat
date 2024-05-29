@@ -136,9 +136,5 @@
       "apiKey": "Khóa API tùy chỉnh",
       "password": "Mật khẩu"
     }
-  },
-  "upload": {
-    "desc": "Chi tiết: {{detail}}",
-    "title": "Tải lên tệp thất bại, vui lòng kiểm tra kết nối mạng hoặc thử lại sau"
   }
 }

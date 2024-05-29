@@ -136,9 +136,5 @@
       "apiKey": "Chiave API personalizzata",
       "password": "Password"
     }
-  },
-  "upload": {
-    "desc": "Dettagli: {{detail}}",
-    "title": "Caricamento del file fallito, controlla la connessione di rete o riprova più tardi"
   }
 }

@@ -3,22 +3,18 @@ import { useResponsive } from 'antd-style';
 import { memo } from 'react';
 import { Flexbox } from 'react-layout-kit';
 
-import ImageItem from '@/components/ImageItem';
-
-import { ImageFileItem } from './type';
+import ImageFileItem from './ImageFileItem';
 
 interface EditableFileListProps {
   alwaysShowClose?: boolean;
   editable?: boolean;
-  items: ImageFileItem[];
-  onRemove?: (id: string) => void;
+  items: string[];
   padding?: number | string;
 }
 
-export const EditableFileList = memo<EditableFileListProps>(
-  ({ items, editable = true, alwaysShowClose, onRemove, padding = 12 }) => {
+const EditableFileList = memo<EditableFileListProps>(
+  ({ items, editable = true, alwaysShowClose, padding = 12 }) => {
     const { mobile } = useResponsive();
-
     return (
       <Flexbox
         gap={mobile ? 4 : 6}
@@ -28,15 +24,7 @@ export const EditableFileList = memo<EditableFileListProps>(
       >
         <ImageGallery>
           {items.map((i) => (
-            <ImageItem
-              alt={i.alt}
-              alwaysShowClose={alwaysShowClose}
-              editable={editable}
-              key={i.id}
-              loading={i.loading}
-              onRemove={() => onRemove?.(i.id)}
-              url={i.url}
-            />
+            <ImageFileItem alwaysShowClose={alwaysShowClose} editable={editable} id={i} key={i} />
           ))}
         </ImageGallery>
       </Flexbox>

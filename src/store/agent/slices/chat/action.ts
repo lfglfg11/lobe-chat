@@ -1,12 +1,12 @@
 import isEqual from 'fast-deep-equal';
 import { produce } from 'immer';
-import { SWRResponse, mutate } from 'swr';
+import useSWR, { SWRResponse, mutate } from 'swr';
 import { DeepPartial } from 'utility-types';
 import { StateCreator } from 'zustand/vanilla';
 
 import { INBOX_SESSION_ID } from '@/const/session';
 import { DEFAULT_AGENT_CONFIG } from '@/const/settings';
-import { useClientDataSWR, useOnlyFetchOnceSWR } from '@/libs/swr';
+import { useClientDataSWR } from '@/libs/swr';
 import { sessionService } from '@/services/session';
 import { AgentState } from '@/store/agent/slices/chat/initialState';
 import { useSessionStore } from '@/store/session';
@@ -112,7 +112,7 @@ export const createChatSlice: StateCreator<
       },
     ),
   useInitAgentStore: (defaultAgentConfig) =>
-    useOnlyFetchOnceSWR<DeepPartial<LobeAgentConfig>>(
+    useSWR<DeepPartial<LobeAgentConfig>>(
       'fetchInboxAgentConfig',
       () => sessionService.getSessionConfig(INBOX_SESSION_ID),
       {
@@ -130,6 +130,7 @@ export const createChatSlice: StateCreator<
             get().internal_dispatchAgentMap(INBOX_SESSION_ID, data, 'initInbox');
           }
         },
+        revalidateOnFocus: false,
       },
     ),
 

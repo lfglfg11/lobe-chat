@@ -90,7 +90,6 @@ describe('FileService', () => {
 
       expect(FileModel.findById).toHaveBeenCalledWith(fileId);
       expect(result).toEqual({
-        id: '1',
         base64Url: 'data:image/png;base64,AA==',
         fileType: 'image/png',
         name: 'test',
@@ -121,7 +120,6 @@ describe('FileService', () => {
       expect(FileModel.findById).toHaveBeenCalledWith(fileId);
       expect(result).toEqual({
         fileType: 'image/png',
-        id: '1',
         name: 'test.png',
         saveMode: 'url',
         url: 'https://example.com/test.png',

@@ -2,7 +2,6 @@ import { act, renderHook } from '@testing-library/react';
 import useSWR from 'swr';
 import { Mock, afterEach, beforeAll, beforeEach, describe, expect, it, vi } from 'vitest';
 
-import { notification } from '@/components/AntdStaticMethods';
 import { DB_File } from '@/database/client/schemas/files';
 import { fileService } from '@/services/file';
 import { uploadService } from '@/services/upload';
@@ -10,13 +9,6 @@ import { uploadService } from '@/services/upload';
 import { useFileStore as useStore } from '../../store';
 
 vi.mock('zustand/traditional');
-
-// Mock necessary modules and functions
-vi.mock('@/components/AntdStaticMethods', () => ({
-  notification: {
-    error: vi.fn(),
-  },
-}));
 
 // Mock for useSWR
 vi.mock('swr', () => ({
@@ -128,6 +120,7 @@ describe('useFileStore:images', () => {
       vi.spyOn(uploadService, 'uploadFile').mockRejectedValue(new Error(errorMessage));
 
       // Mock console.error for testing
+      const consoleErrorMock = vi.spyOn(console, 'error').mockImplementation(() => {});
 
       await act(async () => {
         await result.current.uploadFile(testFile);
@@ -143,9 +136,11 @@ describe('useFileStore:images', () => {
       });
       // 由于上传失败，inputFilesList 应该没有变化
       expect(result.current.inputFilesList).toEqual([]);
+      // 确保错误被正确记录
+      expect(consoleErrorMock).toHaveBeenCalledWith('upload error:', expect.any(Error));
 
-      // 确保错误提示被调用
-      expect(notification.error).toHaveBeenCalled();
+      // Cleanup mock
+      consoleErrorMock.mockRestore();
     });
 
     it('uploadFile should upload the file and update inputFilesList', async () => {

@@ -4,7 +4,7 @@ import useSWR, { mutate } from 'swr';
 import { Mock, afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
 
 import { LOADING_FLAT } from '@/const/message';
-import { DEFAULT_AGENT_CONFIG } from '@/const/settings';
+import { DEFAULT_AGENT_CHAT_CONFIG, DEFAULT_AGENT_CONFIG } from '@/const/settings';
 import { TraceEventType } from '@/const/trace';
 import { chatService } from '@/services/chat';
 import { messageService } from '@/services/message';
@@ -70,6 +70,9 @@ beforeEach(() => {
   vi.clearAllMocks();
   useChatStore.setState(mockState, false);
   vi.spyOn(agentSelectors, 'currentAgentConfig').mockImplementation(() => DEFAULT_AGENT_CONFIG);
+  vi.spyOn(agentSelectors, 'currentAgentChatConfig').mockImplementation(
+    () => DEFAULT_AGENT_CHAT_CONFIG,
+  );
   vi.spyOn(sessionMetaSelectors, 'currentAgentMeta').mockImplementation(() => ({ tags: [] }));
 });
 
@@ -416,11 +419,17 @@ describe('chatMessage actions', () => {
         const { result } = renderHook(() => useChatStore());
         act(() => {
           useAgentStore.setState({
-            agentConfig: {
-              enableAutoCreateTopic: false,
-              autoCreateTopicThreshold: 1,
+            activeId: 'abc',
+            agentMap: {
+              abc: {
+                chatConfig: {
+                  enableAutoCreateTopic: false,
+                  autoCreateTopicThreshold: 1,
+                },
+              },
             },
           });
+
           useChatStore.setState({
             // Mock the currentChats selector to return a list that does not reach the threshold
             messagesMap: {
@@ -447,7 +456,7 @@ describe('chatMessage actions', () => {
         (messageService.createMessage as Mock).mockResolvedValue('new-message-id');
 
         // Mock agent config to simulate auto-create topic behavior
-        (agentSelectors.currentAgentConfig as Mock).mockImplementation(() => ({
+        (agentSelectors.currentAgentChatConfig as Mock).mockImplementation(() => ({
           autoCreateTopicThreshold,
           enableAutoCreateTopic,
         }));

@@ -2,6 +2,14 @@
   "about": {
     "title": "Informazioni"
   },
+  "agentTab": {
+    "chat": "Preferenze di chat",
+    "meta": "Informazioni assistente",
+    "modal": "Impostazioni modello",
+    "plugin": "Impostazioni plugin",
+    "prompt": "Impostazioni ruolo",
+    "tts": "Servizio vocale"
+  },
   "analytics": {
     "telemetry": {
       "desc": "Attivando l'invio dei dati di telemetria, ci aiuti a migliorare complessivamente l'esperienza utente di LobeChat",
@@ -174,6 +182,7 @@
     "enableHistoryCount": {
       "alias": "Illimitato",
       "limited": "Include solo {{number}} messaggi di conversazione",
+      "setlimited": "Imposta il numero di messaggi storici da utilizzare",
       "title": "Limita il numero di messaggi storici",
       "unlimited": "Numero illimitato di messaggi storici"
     },
@@ -361,6 +370,11 @@
   },
   "systemAgent": {
     "title": "Assistente di sistema",
+    "topic": {
+      "label": "Modello di denominazione degli argomenti",
+      "modelDesc": "Modello designato per la ridenominazione automatica degli argomenti",
+      "title": "Ridenominazione automatica degli argomenti"
+    },
     "translation": {
       "label": "Modello di traduzione",
       "modelDesc": "Modello specificato per la traduzione",

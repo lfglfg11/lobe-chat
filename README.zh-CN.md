@@ -250,14 +250,14 @@ LobeChat 的插件生态系统是其核心功能的重要扩展，它极大地�
 
 <!-- AGENT LIST -->
 
-| 最近新增                                                                                                                                                         | 助手说明                                                                                                              |
-| ---------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------- |
-| [AWS Guru](https://chat-preview.lobehub.com/market?agent=aws-guru)<br/><sup>By **[wilbeibi](https://github.com/wilbeibi)** on **2024-05-15**</sup>               | Agent to answer AWS questions<br/>`programming`                                                                       |
-| [Linux Buddy](https://chat-preview.lobehub.com/market?agent=linux-buddy)<br/><sup>By **[Firpo7](https://github.com/Firpo7)** on **2024-05-15**</sup>             | 您的 Linux 专家朋友<br/>`linux` `technical-support` `buddy`                                                           |
-| [摄影评论家](https://chat-preview.lobehub.com/market?agent=photography-critic)<br/><sup>By **[Justin3go](https://github.com/Justin3go)** on **2024-05-15**</sup> | 擅长摄影作品细致分析，包括主题、构图、技术质量、光线使用、创意与原创性等。<br/>`摄影` `评价` `分析` `构图` `技术质量` |
-| [Python Buddy](https://chat-preview.lobehub.com/market?agent=python-buddy)<br/><sup>By **[Firpo7](https://github.com/Firpo7)** on **2024-05-15**</sup>           | 您的 Python 专家朋友<br/>`python` `软件开发` `编程` `代码` `伙伴`                                                     |
+| 最近新增                                                                                                                                                            | 助手说明                                                                                                                                                                        |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [Dart/Flutter Dev](https://chat-preview.lobehub.com/market?agent=dart-flutter)<br/><sup>By **[rezmeplxrf](https://github.com/rezmeplxrf)** on **2024-05-28**</sup>  | Dart/Flutter 전문가. 3단계 이상 중첩하지 않음. 상태 관리에 riverpod, flutter_riverpod, riverpod_hook, flutter_hook 사용.<br/>`dart` `flutter` `개발` `상태-관리` `riverpod`     |
+| [C# .NET 技术专家](https://chat-preview.lobehub.com/market?agent=dotnet-expert)<br/><sup>By **[johnnyqian](https://github.com/johnnyqian)** on **2024-05-28**</sup> | C# .NET 技术专家<br/>`net` `developer` `net-core` `azure` `c` `microsoft` `sql-server` `entity-framework` `ef` `ef-core`                                                        |
+| [基督传教士](https://chat-preview.lobehub.com/market?agent=jesus-missionary)<br/><sup>By **[epochaudio](https://github.com/epochaudio)** on **2024-05-28**</sup>    | 作为一名耶稣传教士，我将依据圣经教导以启迪你对神的话语的理解和实际运用。无论是在困惑还是寻求灵性成长的过程中，我都在这智慧的源泉旁为你服务<br/>`圣经教学` `基督传教` `神学布道` |
+| [日常小助手](https://chat-preview.lobehub.com/market?agent=junior-helper)<br/><sup>By **[Qinks6](https://github.com/Qinks6)** on **2024-05-28**</sup>               | 一个能搜索、能画图的小可爱<br/>`助手` `搜索` `绘图` `信息查询` `用户交互`                                                                                                       |
 
-> 📊 Total agents: [<kbd>**258**</kbd> ](https://github.com/lobehub/lobe-chat-agents)
+> 📊 Total agents: [<kbd>**280**</kbd> ](https://github.com/lobehub/lobe-chat-agents)
 
  <!-- AGENT LIST -->
 

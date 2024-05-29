@@ -1,3 +1,4 @@
+import { DeepPartial } from 'utility-types';
 import { StateCreator } from 'zustand/vanilla';
 
 import { chainPickEmoji } from '@/chains/pickEmoji';
@@ -6,7 +7,7 @@ import { chainSummaryDescription } from '@/chains/summaryDescription';
 import { chainSummaryTags } from '@/chains/summaryTags';
 import { TraceNameMap, TracePayload, TraceTopicType } from '@/const/trace';
 import { chatService } from '@/services/chat';
-import { LobeAgentConfig } from '@/types/agent';
+import { LobeAgentChatConfig, LobeAgentConfig } from '@/types/agent';
 import { MetaData } from '@/types/meta';
 import { MessageTextChunk } from '@/utils/fetch';
 import { setNamespace } from '@/utils/storeDebug';
@@ -45,15 +46,15 @@ export interface Action {
   autocompleteMeta: (key: keyof MetaData) => void;
   dispatchConfig: (payload: ConfigDispatch) => void;
   dispatchMeta: (payload: MetaDataDispatch) => void;
-
   getCurrentTracePayload: (data: Partial<TracePayload>) => TracePayload;
-  resetAgentConfig: () => void;
 
+  resetAgentConfig: () => void;
   resetAgentMeta: () => void;
 
-  setAgentConfig: (config: Partial<LobeAgentConfig>) => void;
-
+  setAgentConfig: (config: DeepPartial<LobeAgentConfig>) => void;
   setAgentMeta: (meta: Partial<MetaData>) => void;
+  setChatConfig: (config: Partial<LobeAgentChatConfig>) => void;
+
   streamUpdateMetaArray: (key: keyof MetaData) => any;
   streamUpdateMetaString: (key: keyof MetaData) => any;
   toggleAgentPlugin: (pluginId: string, state?: boolean) => void;
@@ -230,10 +231,10 @@ export const store: StateCreator<Store, [['zustand/devtools', never]]> = (set, g
     topicId: TraceTopicType.AgentSettings,
     ...data,
   }),
-
   resetAgentConfig: () => {
     get().dispatchConfig({ type: 'reset' });
   },
+
   resetAgentMeta: () => {
     get().dispatchMeta({ type: 'reset' });
   },
@@ -243,6 +244,9 @@ export const store: StateCreator<Store, [['zustand/devtools', never]]> = (set, g
   },
   setAgentMeta: (meta) => {
     get().dispatchMeta({ type: 'update', value: meta });
+  },
+  setChatConfig: (config) => {
+    get().setAgentConfig({ chatConfig: config });
   },
 
   streamUpdateMetaArray: (key: keyof MetaData) => {

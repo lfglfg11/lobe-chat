@@ -2,6 +2,14 @@
   "about": {
     "title": "について"
   },
+  "agentTab": {
+    "chat": "チャット設定",
+    "meta": "メタ情報",
+    "modal": "モーダル設定",
+    "plugin": "プラグイン設定",
+    "prompt": "プロンプト設定",
+    "tts": "音声サービス"
+  },
   "analytics": {
     "telemetry": {
       "desc": "匿名の使用データを送信することで、LobeChat の全体的なユーザーエクスペリエンスの向上にご協力いただけます",
@@ -174,6 +182,7 @@
     "enableHistoryCount": {
       "alias": "制限なし",
       "limited": "{{number}}件の会話メッセージのみ含む",
+      "setlimited": "使用履歴メッセージ数",
       "title": "過去メッセージ数を制限する",
       "unlimited": "過去メッセージ数を制限しない"
     },
@@ -361,6 +370,11 @@
   },
   "systemAgent": {
     "title": "システムアシスタント",
+    "topic": {
+      "label": "トピックネーミングモデル",
+      "modelDesc": "トピックの自動リネームに使用されるモデルを指定します",
+      "title": "トピックの自動リネーム"
+    },
     "translation": {
       "label": "翻訳モデル",
       "modelDesc": "翻訳に使用するモデルを指定します",

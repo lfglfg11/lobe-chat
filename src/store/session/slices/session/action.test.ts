@@ -34,9 +34,6 @@ vi.mock('@/components/AntdStaticMethods', () => ({
   },
 }));
 
-// Mock router
-const mockRouterPush = vi.fn();
-
 const mockRefresh = vi.fn();
 beforeEach(() => {
   vi.clearAllMocks();
@@ -72,12 +69,14 @@ describe('SessionAction', () => {
       let createdSessionId;
 
       await act(async () => {
-        createdSessionId = await result.current.createSession({ config: { displayMode: 'docs' } });
+        createdSessionId = await result.current.createSession({
+          config: { chatConfig: { displayMode: 'docs' } },
+        });
       });
 
       const call = vi.mocked(sessionService.createSession).mock.calls[0];
       expect(call[0]).toEqual(LobeSessionType.Agent);
-      expect(call[1]).toMatchObject({ config: { displayMode: 'docs' } });
+      expect(call[1]).toMatchObject({ config: { chatConfig: { displayMode: 'docs' } } });
 
       expect(createdSessionId).toBe(newSessionId);
     });
@@ -91,14 +90,14 @@ describe('SessionAction', () => {
 
       await act(async () => {
         createdSessionId = await result.current.createSession(
-          { config: { displayMode: 'docs' } },
+          { config: { chatConfig: { displayMode: 'docs' } } },
           false,
         );
       });
 
       const call = vi.mocked(sessionService.createSession).mock.calls[0];
       expect(call[0]).toEqual(LobeSessionType.Agent);
-      expect(call[1]).toMatchObject({ config: { displayMode: 'docs' } });
+      expect(call[1]).toMatchObject({ config: { chatConfig: { displayMode: 'docs' } } });
 
       expect(createdSessionId).toBe(newSessionId);
     });
@@ -149,7 +148,7 @@ describe('SessionAction', () => {
   });
 
   describe('pinSession', () => {
-    it.skip('should pin a session when pinned is true', async () => {
+    it('should pin a session when pinned is true', async () => {
       const { result } = renderHook(() => useSessionStore());
       const sessionId = 'session-id-to-pin';
 
@@ -161,7 +160,7 @@ describe('SessionAction', () => {
       expect(mockRefresh).toHaveBeenCalled();
     });
 
-    it.skip('should unpin a session when pinned is false', async () => {
+    it('should unpin a session when pinned is false', async () => {
       const { result } = renderHook(() => useSessionStore());
       const sessionId = 'session-id-to-unpin';
 

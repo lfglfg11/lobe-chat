@@ -2,6 +2,14 @@
   "about": {
     "title": "Hakkında"
   },
+  "agentTab": {
+    "chat": "Sohbet Tercihi",
+    "meta": "Asistan Bilgisi",
+    "modal": "Model Ayarları",
+    "plugin": "Eklenti Ayarları",
+    "prompt": "Karakter Ayarları",
+    "tts": "Metin Okuma Hizmeti"
+  },
   "analytics": {
     "telemetry": {
       "desc": "Anonim kullanım verilerini göndererek LobeChat'in genel kullanıcı deneyimini iyileştirmemize yardımcı olabilirsiniz",
@@ -174,6 +182,7 @@
     "enableHistoryCount": {
       "alias": "Sınırsız",
       "limited": "Yalnızca {{number}} konuşma mesajını içerir",
+      "setlimited": "Kullanılan mesaj sayısı",
       "title": "Geçmiş Mesaj Sayısı Sınırlama",
       "unlimited": "Sınırsız geçmiş mesaj sayısı"
     },
@@ -361,6 +370,11 @@
   },
   "systemAgent": {
     "title": "Sistem Asistanı",
+    "topic": {
+      "label": "Konu Adlandırma Modeli",
+      "modelDesc": "Konuların otomatik olarak yeniden adlandırılması için belirlenen model",
+      "title": "Konu Otomatik Adlandırma"
+    },
     "translation": {
       "label": "Çeviri Modeli",
       "modelDesc": "Çeviri için belirlenen model",

@@ -147,11 +147,15 @@ describe('chatSelectors', () => {
       act(() => {
         useAgentStore.setState({
           activeId: 'inbox',
-          agentConfig: {
-            historyCount: 2,
-            enableHistoryCount: true,
-            model: 'abc',
-          } as LobeAgentConfig,
+          agentMap: {
+            inbox: {
+              chatConfig: {
+                historyCount: 2,
+                enableHistoryCount: true,
+              },
+              model: 'abc',
+            } as LobeAgentConfig,
+          },
         });
       });
 

@@ -310,6 +310,12 @@ const OpenAI: ModelProviderCard = {
       vision: true,
     },
     {
+      displayName: 'Suno AI（生成音乐）',
+      enabled: true,
+      id: 'suno-v3',
+      tokens: 4096,
+    },
+    {
       displayName: 'GPT-S（学术写手）',
       files: true,
       functionCall: false,

@@ -30,6 +30,7 @@ import {
   Wenxin,
   Yi,
   Bing,
+  Suno,
 } from '@lobehub/icons';
 import { memo } from 'react';
 
@@ -106,6 +107,7 @@ const ModelIcon = memo<ModelProviderIconProps>(({ model: originModel, size = 12 
   if (model.includes('phi3')) return <Azure.Avatar size={size} />;
   if (model.includes('firefly')) return <Adobe.Avatar size={size} />;
   if (model.includes('abab')) return <Minimax.Avatar size={size} />;
+  if (model.includes('sudo')) return <Suno.Avatar size={size} />;
   if (model.includes('jamba') ||
     model.includes('j2-'))
     return <Ai21.Avatar size={size} />;

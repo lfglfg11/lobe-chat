@@ -30,6 +30,7 @@ import {
   Tongyi,
   Wenxin,
   Yi,
+  Sudo,
 } from '@lobehub/icons';
 import { memo } from 'react';
 
@@ -56,7 +57,6 @@ const ModelIcon = memo<ModelIconProps>(({ model, size = 12 }) => {
   if (model.includes('moonshot')) return <Moonshot size={size} />;
   if (model.includes('qwen')) return <Tongyi size={size} />;
   if (model.includes('minmax')) return <Minimax size={size} />;
-  if (model.includes('abab')) return <Minimax size={size} />;
   if (model.includes('mistral') || model.includes('mixtral')) return <Mistral size={size} />;
 
   // free-api 系列自定义模型  
@@ -77,6 +77,7 @@ const ModelIcon = memo<ModelIconProps>(({ model, size = 12 }) => {
   if (model.includes('command')) return <Cohere size={size} />;
   if (model.includes('dbrx')) return <Dbrx size={size} />;
   if (model.includes('abab')) return <Minimax size={size} />;
+  if (model.includes('sudo')) return <Suno.Avatar size={size} />;
 
   // below: To be supported in providers, move up if supported
   if (model.includes('baichuan')) return <Baichuan size={size} />;

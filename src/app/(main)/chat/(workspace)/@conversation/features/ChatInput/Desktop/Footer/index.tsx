@@ -138,7 +138,7 @@ const Footer = memo<FooterProps>(({ setExpand }) => {
         </Flexbox>
         <SaveTopic />
         <Flexbox style={{ minWidth: 92 }}>
-          {loading ? (
+          {isAIGenerating ? (
             <Button
               className={styles.loadingButton}
               icon={<StopLoadingIcon />}

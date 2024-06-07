@@ -19,6 +19,7 @@ import { isMacOS } from '@/utils/platform';
 import DragUpload from './DragUpload';
 import { LocalFiles } from './LocalFiles';
 import SendMore from './SendMore';
+
 const useStyles = createStyles(({ css, prefixCls, token }) => {
   return {
     arrow: css`

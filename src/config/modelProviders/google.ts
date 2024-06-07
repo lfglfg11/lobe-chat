@@ -98,7 +98,12 @@ const Google: ModelProviderCard = {
       tokens: 32_768,
     },
   ],
+  checkModel: 'gemini-pro',
   id: 'google',
+  name: 'Google',
+  proxyUrl: {
+    placeholder: 'https://generativelanguage.googleapis.com',
+  },
 };
 
 export default Google;

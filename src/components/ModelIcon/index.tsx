@@ -31,6 +31,7 @@ import {
   Yi,
   Bing,
   Suno,
+  Stepfun,
 } from '@lobehub/icons';
 import { memo } from 'react';
 
@@ -71,7 +72,7 @@ const ModelIcon = memo<ModelProviderIconProps>(({ model: originModel, size = 12 
     model.includes('research'))
     return <Perplexity.Avatar size={size} />;
   if (model.includes('coze')) return <ByteDance.Avatar size={size} />;
-  if (model.includes('step')) return <LLaVA.Avatar size={size} />;
+  if (model.includes('step')) return <Stepfun.Avatar size={size} />;
   if (model.includes('bing')) return <Bing.Avatar size={size} />;
   
   if (model.includes('yi-')) return <Yi.Avatar size={size} />;

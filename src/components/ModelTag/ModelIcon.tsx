@@ -31,6 +31,7 @@ import {
   Wenxin,
   Yi,
   Suno,
+  Stepfun,
 } from '@lobehub/icons';
 import { memo } from 'react';
 
@@ -65,7 +66,7 @@ const ModelIcon = memo<ModelIconProps>(({ model, size = 12 }) => {
     model.includes('detail') ||
     model.includes('concise') ||
     model.includes('research')) return <Perplexity size={size} />;
-  if (model.includes('step')) return <LLaVA size={size} />;
+  if (model.includes('step')) return <Stepfun size={size} />;
   if (model.includes('bing')) return <Copilot size={size} />;
   if (model.includes('coze')) return <ByteDance size={size} />;
 

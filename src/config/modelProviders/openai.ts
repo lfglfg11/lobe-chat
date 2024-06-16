@@ -318,7 +318,7 @@ const OpenAI: ModelProviderCard = {
       displayName: 'GPT-S（学术写手）',
       files: true,
       functionCall: false,
-      id: 'gpt-4-gizmo-g-kZ0eYXlJe',
+      id: 'gpt-4-gizmo-g-Lq7UjNxjV-lun-wen-xie-shou',
       tokens: 32_768,
       vision: true,
     },

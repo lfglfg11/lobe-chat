@@ -34,7 +34,7 @@ jobs:
         with:
           context: .
           push: true
-          tags: yangclivia/lobe-chat:latest, yangclivia/lobe-chat:nightly-${{ env.TODAY }}
+          tags: lfglfg11/lobe-chat:latest, lfglfg11/lobe-chat:nightly-${{ env.TODAY }}
           platforms: linux/amd64,linux/arm64
           cache-from: type=gha, prefix=lobe-chat
           cache-to: type=gha, prefix=lobe-chat, mode=max

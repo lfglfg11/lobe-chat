@@ -35,7 +35,7 @@ jobs:
           context: .
           push: true
           file: ./Dockerfile.other
-          tags: yangclivia/lobe-chat:yubb-latest, yangclivia/lobe-chat:yubb-nightly-${{ env.TODAY }}
+          tags: lfglfg11/lobe-chat:yubb-latest, lfglfg11/lobe-chat:yubb-nightly-${{ env.TODAY }}
           platforms: linux/amd64,linux/arm64
           cache-from: type=gha, prefix=lobe-chat
           cache-to: type=gha, prefix=lobe-chat, mode=max

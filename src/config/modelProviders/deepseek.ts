@@ -14,7 +14,7 @@ const DeepSeek: ModelProviderCard = {
       displayName: 'DeepSeek（代码）',
       enabled: true,
       id: 'deepseek-coder',
-      tokens: 16_384,
+      tokens: 32_768,
     },
   ],
   checkModel: 'deepseek-chat',

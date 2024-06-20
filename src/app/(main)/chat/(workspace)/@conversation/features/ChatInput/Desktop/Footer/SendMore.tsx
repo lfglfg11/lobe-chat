@@ -29,7 +29,7 @@ interface SendMoreProps {
   isMac?: boolean;
 }
 
-const SendMore = memo<SendMoreProps>(({ disabled, isMac }) => {
+const SendMore = memo<SendMoreProps>(({ disabled: _disabled, isMac }) => {
   const { t } = useTranslation('chat');
 
   const { styles } = useStyles();

@@ -60,12 +60,4 @@ sitemap*.xml
 robots.txt
 
 *.patch
-src/config/modelProviders/openai.ts
-src/config/modelProviders/openai.ts
-src/config/modelProviders/openai.ts
-src/config/modelProviders/ollama.ts
-src/config/modelProviders/openai.ts
-src/config/modelProviders/zhipu.ts
-src/config/modelProviders/ollama.ts
-src/config/modelProviders/openai.ts
-src/config/modelProviders/zhipu.ts
+*.pdf

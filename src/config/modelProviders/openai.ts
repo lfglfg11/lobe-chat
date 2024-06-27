@@ -311,7 +311,7 @@ const OpenAI: ModelProviderCard = {
     {
       displayName: 'Suno AI（生成音乐）',
       enabled: true,
-      id: 'suno-v3',
+      id: 'suno-v3.5',
       tokens: 4096,
     },
     {

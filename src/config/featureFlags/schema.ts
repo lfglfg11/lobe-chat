@@ -36,7 +36,7 @@ export const DEFAULT_FEATURE_FLAGS: IFeatureFlags = {
 
   dalle: true,
 
-  check_updates: true,
+  check_updates: false,
   welcome_suggest: true,
 
   clerk_sign_up: false,

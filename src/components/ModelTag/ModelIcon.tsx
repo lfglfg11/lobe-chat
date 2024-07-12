@@ -1,6 +1,7 @@
 import {
   AdobeFirefly,
   Ai21,
+  Ai360,
   AiMass,
   Aws,
   Azure,
@@ -81,6 +82,7 @@ const ModelIcon = memo<ModelIconProps>(({ model, size = 12 }) => {
   if (model.includes('abab')) return <Minimax size={size} />;
   if (model.includes('suno')) return <Suno.Avatar size={size} />;
   if (model.includes('taichu')) return <AiMass size={size} />;
+  if (model.includes('360gpt')) return <Ai360 size={size} />;
 
   // below: To be supported in providers, move up if supported
   if (model.includes('baichuan')) return <Baichuan size={size} />;

@@ -6,24 +6,10 @@ import { ModelProviderCard } from '@/types/llm';
 const OpenAI: ModelProviderCard = {
   chatModels: [
     {
-      description: 'Currently points to gpt-4o-mini-2024-07-18',
-      displayName: 'GPT-4o mini',
-      enabled: true,
-      id: 'gpt-3.5-turbo',
-      tokens: 16_385,
-    },
-    {
       displayName: 'GPT-4（16K）',
       enabled: true,
       id: 'gpt-4',
       tokens: 16_385,
-    },
-    {
-      displayName: 'GPT-3.5 Turbo (0125)',
-      functionCall: true,
-      id: 'gpt-4o',
-      tokens: 128_000,
-      vision: true,
     },
     {
       description: 'GPT-4 Turbo with Vision',

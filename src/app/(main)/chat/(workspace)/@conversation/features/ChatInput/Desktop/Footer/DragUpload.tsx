@@ -229,10 +229,10 @@ const DragUpload = memo(() => {
                     </Flexbox>
                     <Flexbox align={'center'} gap={8} style={{ textAlign: 'center' }}>
                         <Flexbox className={styles.title}>
-                            {t(enabledFiles ? 'upload.dragFileTitle' : 'upload.dragTitle')}
+                            {t(enabledFiles ? 'DragUpload.dragFileTitle' : 'DragUpload.dragTitle')}
                         </Flexbox>
                         <Flexbox className={styles.desc}>
-                            {t(enabledFiles ? 'upload.dragFileDesc' : 'upload.dragDesc')}
+                            {t(enabledFiles ? 'DragUpload.dragFileDesc' : 'DragUpload.dragDesc')}
                         </Flexbox>
                     </Flexbox>
                 </Center>

@@ -64,8 +64,6 @@ const Footer = memo<FooterProps>(({ setExpand }) => {
 
   const model = useAgentStore(agentSelectors.currentAgentModel);
 
-  const enabledFiles = useUserStore(modelProviderSelectors.isModelEnabledFiles(model));
-
   const [useCmdEnterToSend, canUpload] = useUserStore((s) => [
     preferenceSelectors.useCmdEnterToSend(s),
     modelProviderSelectors.isModelEnabledUpload(model)(s),
@@ -100,7 +98,7 @@ const Footer = memo<FooterProps>(({ setExpand }) => {
       <Flexbox align={'center'} gap={8} horizontal style={{ overflow: 'hidden' }}>
         {canUpload && (
           <>
-            <DragUpload enabledFiles={enabledFiles} onUploadFiles={uploadImages} />
+            <DragUpload />
             <LocalFiles />
           </>
         )}

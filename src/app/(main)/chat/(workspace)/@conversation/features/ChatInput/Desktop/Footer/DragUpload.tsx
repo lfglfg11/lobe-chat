@@ -79,7 +79,7 @@ const handleDragOver = (e: DragEvent) => {
 
 const DragUpload = memo(() => {
     const { styles, theme } = useStyles();
-    const { t } = useTranslation('chat');
+    const { t } = useTranslation('components');
     const [isDragging, setIsDragging] = useState(false);
     // When a file is dragged to a different area, the 'dragleave' event may be triggered,
     // causing isDragging to be mistakenly set to false.

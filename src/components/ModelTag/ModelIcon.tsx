@@ -10,6 +10,7 @@ import {
   ChatGLM,
   Claude,
   Copilot,
+  CodeGeeX,
   Cohere,
   Dbrx,
   DeepSeek,
@@ -48,6 +49,7 @@ const ModelIcon = memo<ModelIconProps>(({ model, size = 12 }) => {
   // currently supported models, maybe not in its own provider
   if (model.startsWith('gpt')) return <OpenAI size={size} />;
   if (model.startsWith('glm') || model.includes('chatglm')) return <ChatGLM size={size} />;
+  if (model.includes('codegeex')) return <CodeGeeX size={size} />;
   if (model.includes('claude')) return <Claude size={size} />;
   if (model.includes('deepseek')) return <DeepSeek size={size} />;
   if (model.includes('titan')) return <Aws size={size} />;

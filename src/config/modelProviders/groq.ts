@@ -18,10 +18,16 @@ const Groq: ModelProviderCard = {
       tokens: 32_768,
     },
     {
-      displayName: 'Gemma-7b-it',
-      enabled: true,
+      displayName: 'Gemma 7B',
       functionCall: true,
       id: 'gemma-7b-it',
+      tokens: 8192,
+    },
+    {
+      displayName: 'Gemma2 9B',
+      enabled: true,
+      functionCall: true,
+      id: 'gemma2-9b-it',
       tokens: 8192,
     },
     {
@@ -37,7 +43,7 @@ const Groq: ModelProviderCard = {
       tokens: 4096,
     },
   ],
-  checkModel: 'gemma-7b-it',
+  checkModel: 'gemma2-9b-it',
   id: 'groq',
   name: 'Groq',
   proxyUrl: {

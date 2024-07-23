@@ -1,6 +1,6 @@
 import { memo } from 'react';
 
-import { EditableFileList } from '@/features/FileList';
+import EditableFileList from '@/components/FileList/EditableFileList';
 import { useFileStore } from '@/store/file';
 
 export const LocalFiles = memo(() => {

@@ -9,10 +9,12 @@ import { Center, Flexbox } from 'react-layout-kit';
 import StopLoadingIcon from '@/components/StopLoading';
 import SaveTopic from '@/features/ChatInput/Topic';
 import { useSendMessage } from '@/features/ChatInput/useSend';
+import { useAgentStore } from '@/store/agent';
+import { agentSelectors } from '@/store/agent/slices/chat';
 import { useChatStore } from '@/store/chat';
 import { chatSelectors } from '@/store/chat/selectors';
 import { useUserStore } from '@/store/user';
-import { preferenceSelectors } from '@/store/user/selectors';
+import { modelProviderSelectors, preferenceSelectors } from '@/store/user/selectors';
 import { isMacOS } from '@/utils/platform';
 import DragUpload from './DragUpload';
 import { LocalFiles } from './LocalFiles';
@@ -47,11 +49,10 @@ const useStyles = createStyles(({ css, prefixCls, token }) => {
 const isMac = isMacOS();
 
 interface FooterProps {
-  expand: boolean;
   setExpand?: (expand: boolean) => void;
 }
 
-const Footer = memo<FooterProps>(({ setExpand, expand }) => {
+const Footer = memo<FooterProps>(({ setExpand }) => {
   const { t } = useTranslation('chat');
 
   const { theme, styles } = useStyles();

@@ -63,10 +63,6 @@ const ModelIcon = memo<ModelProviderIconProps>(({ model: originModel, size = 12 
   if (model.includes('gemma')) return <Gemma.Avatar size={size} />;
   if (model.includes('moonshot')) return <Moonshot.Avatar size={size} />;
   if (model.includes('qwen')) return <Tongyi.Avatar background={Tongyi.colorPrimary} size={size} />;
-  if (model.includes('minmax')) return <Minimax.Avatar size={size} />;
-  if (model.includes('mistral') ||
-    model.includes('mixtral'))
-    return <Mistral.Avatar size={size} />;
 
   // free-api 系列自定义模型
   if (model.includes('pplx') ||
@@ -79,6 +75,8 @@ const ModelIcon = memo<ModelProviderIconProps>(({ model: originModel, size = 12 
   if (model.includes('step')) return <Stepfun.Avatar size={size} />;
   if (model.includes('bing')) return <Bing.Avatar size={size} />;
   
+  if (model.includes('minmax') || model.includes('abab')) return <Minimax.Avatar size={size} />;
+  if (model.includes('mistral') || model.includes('mixtral') || model.includes('codestral')) return <Mistral.Avatar size={size} />;
   if (model.includes('yi-')) return <Yi.Avatar size={size} />;
   if (model.startsWith('openrouter')) return <OpenRouter.Avatar size={size} />; // only for Cinematika and Auto
   if (model.startsWith('openchat')) return <OpenChat.Avatar size={size} />;

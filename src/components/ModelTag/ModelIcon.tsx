@@ -30,6 +30,7 @@ import {
   Rwkv,
   Spark,
   Stability,
+  Stepfun,
   Tongyi,
   Wenxin,
   Yi,
@@ -43,9 +44,12 @@ interface ModelIconProps {
   size?: number;
 }
 
-const ModelIcon = memo<ModelIconProps>(({ model, size = 12 }) => {
-  if (!model) return;
+const ModelIcon = memo<ModelIconProps>(({ model: originModel, size = 12 }) => {
+  if (!originModel) return;
 
+  // lower case the origin model so to better match more model id case
+  const model = originModel.toLowerCase();
+  
   // currently supported models, maybe not in its own provider
   if (model.startsWith('gpt')) return <OpenAI size={size} />;
   if (model.startsWith('glm') || model.includes('chatglm')) return <ChatGLM size={size} />;
@@ -62,7 +66,6 @@ const ModelIcon = memo<ModelIconProps>(({ model, size = 12 }) => {
   if (model.includes('moonshot')) return <Moonshot size={size} />;
   if (model.includes('qwen')) return <Tongyi size={size} />;
   if (model.includes('minmax')) return <Minimax size={size} />;
-  if (model.includes('mistral') || model.includes('mixtral')) return <Mistral size={size} />;
 
   // free-api 系列自定义模型  
   if (model.includes('pplx') ||
@@ -74,8 +77,9 @@ const ModelIcon = memo<ModelIconProps>(({ model, size = 12 }) => {
   if (model.includes('bing')) return <Copilot size={size} />;
   if (model.includes('coze')) return <ByteDance size={size} />;
 
+  if (model.includes('abab')) return <Minimax size={size} />;
+  if (model.includes('mistral') || model.includes('mixtral') || model.includes('codestral')) return <Mistral size={size} />;
   if (model.includes('yi-')) return <Yi size={size} />;
-  if (model.includes('pplx') || model.includes('sonar')) return <Perplexity size={size} />;
 
   if (model.startsWith('openrouter')) return <OpenRouter size={size} />; // only for Cinematika and Auto
   if (model.startsWith('openchat')) return <OpenChat size={size} />;

@@ -5,6 +5,7 @@ export default {
   agentDefaultMessage:
     '你好，我是 **{{name}}**，你可以立即与我开始对话，也可以前往 [助手设置](/chat/settings#session={{id}}) 完善我的信息。',
   agentDefaultMessageWithSystemRole: '你好，我是 **{{name}}**，{{systemRole}}，让我们开始对话吧！',
+  agentDefaultMessageWithoutEdit: '你好，我是 **{{name}}**，让我们开始对话吧！',
   agentsAndConversations: '助手与会话',
   backToBottom: '跳转至当前',
   clearCurrentMessages: '清空当前会话消息',
@@ -132,9 +133,5 @@ export default {
     actionFiletip: '上传文件',
     actionTooltip: '上传图片',
     disabled: '当前模型不支持视觉识别和文件分析，请切换模型后使用',
-    dragDesc: '拖拽文件到这里，支持上传多个图片。按住 Shift 直接发送图片',
-    dragFileDesc: '拖拽图片和文件到这里，支持上传多个图片和文件。按住 Shift 直接发送图片或文件',
-    dragFileTitle: '上传文件',
-    dragTitle: '上传图片',
   },
 };

@@ -1,6 +1,11 @@
 # lobe chat
 
-本版本适配 [free-api](https://github.com/LLM-Red-Team) 全系列 ，并且同步最新的[lobe-chat](https://lobehub.com/zh/docs/self-hosting/environment-variables)版本
+本版本适配 [free-api](https://github.com/LLM-Red-Team) 全系列 ，并且同步最新的[lobe-chat](https://lobehub.com/zh/docs/self-hosting/environment-variables)版本，并且适配支持free-api和gpt-4-all等逆向模型上传文件的功能！
+
+## 效果
+![image](https://github.com/user-attachments/assets/aa4f7ea8-dead-4eda-965e-c71d37b31cd4)
+
+![image](https://github.com/user-attachments/assets/03987187-8ab0-471d-aafa-12ab12c13578)
 
 
 ## 如何使用
@@ -207,6 +212,7 @@ We have implemented support for the following model service providers:
 - **Minimax**: Integrated the Minimax models, including the MoE model **abab6**, offers a broader range of choices. [Learn more](https://www.minimaxi.com/)
 - **DeepSeek**: Integrated with the DeepSeek series models, an innovative AI startup from China, The product has been designed to provide a model that balances performance with price. [Learn more](https://www.deepseek.com/)
 - **Qwen**: Integrated the Qwen series models, including the latest **qwen-turbo**, **qwen-plus** and **qwen-max**. [Lean more](https://help.aliyun.com/zh/dashscope/developer-reference/model-introduction)
+- **Novita AI**: Access **Llama**, **Mistral**, and other leading open-source models at cheapest prices. Engage in uncensored role-play, spark creative discussions, and foster unrestricted innovation. **Pay For What You Use.** [Learn more](https://novita.ai/llm-api?utm_source=lobechat&utm_medium=ch&utm_campaign=api)
 
 At the same time, we are also planning to support more model service providers, such as Replicate and Perplexity, to further enrich our service provider library. If you would like LobeChat to support your favorite service provider, feel free to join our [community discussion](https://github.com/lobehub/lobe-chat/discussions/1284).
 
@@ -299,12 +305,12 @@ In addition, these plugins are not limited to news aggregation, but can also ext
 
 <!-- PLUGIN LIST -->
 
-| Recent Submits                                                                                                         | Description                                                                                                                |
-| ---------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
-| [Savvy Trader AI](https://chat-preview.lobehub.com/settings/agent)<br/><sup>By **savvytrader** on **2024-06-27**</sup> | Realtime stock, crypto and other investment data.<br/>`stock` `analyze`                                                    |
-| [Social Search](https://chat-preview.lobehub.com/settings/agent)<br/><sup>By **say-apps** on **2024-06-02**</sup>      | The Social Search provides access to tweets, users, followers, images, media and more.<br/>`social` `twitter` `x` `search` |
-| [Space](https://chat-preview.lobehub.com/settings/agent)<br/><sup>By **automateyournetwork** on **2024-05-12**</sup>   | Space data including NASA.<br/>`space` `nasa`                                                                              |
-| [Search1API](https://chat-preview.lobehub.com/settings/agent)<br/><sup>By **fatwang2** on **2024-05-06**</sup>         | Search aggregation service, specifically designed for LLMs<br/>`web` `search`                                              |
+| Recent Submits                                                                                                          | Description                                                                                                                               |
+| ----------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
+| [Shopping tools](https://chat-preview.lobehub.com/settings/agent)<br/><sup>By **shoppingtools** on **2024-07-19**</sup> | Search for products on eBay & AliExpress, find eBay events & coupons. Get prompt examples.<br/>`shopping` `e-bay` `ali-express` `coupons` |
+| [Savvy Trader AI](https://chat-preview.lobehub.com/settings/agent)<br/><sup>By **savvytrader** on **2024-06-27**</sup>  | Realtime stock, crypto and other investment data.<br/>`stock` `analyze`                                                                   |
+| [Social Search](https://chat-preview.lobehub.com/settings/agent)<br/><sup>By **say-apps** on **2024-06-02**</sup>       | The Social Search provides access to tweets, users, followers, images, media and more.<br/>`social` `twitter` `x` `search`                |
+| [Space](https://chat-preview.lobehub.com/settings/agent)<br/><sup>By **automateyournetwork** on **2024-05-12**</sup>    | Space data including NASA.<br/>`space` `nasa`                                                                                             |
 
 > 📊 Total plugins: [<kbd>**52**</kbd>](https://github.com/lobehub/lobe-chat-plugins)
 
@@ -338,14 +344,14 @@ Our marketplace is not just a showcase platform but also a collaborative space. 
 
 <!-- AGENT LIST -->
 
-| Recent Submits                                                                                                                                                                                  | Description                                                                                                                                                            |
-| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [Convert SQL Table Structure to Dao and Mapper](https://chat-preview.lobehub.com/market?agent=my-batis-generator)<br/><sup>By **[MeYoung](https://github.com/MeYoung)** on **2024-07-17**</sup> | Generate entity class and MyBatis Mapper based on a table structure<br/>`sql` `sql` `mybatis`                                                                          |
-| [Foreign Trade High EQ Response](https://chat-preview.lobehub.com/market?agent=reply-agent)<br/><sup>By **[zhushen12580](https://github.com/zhushen12580)** on **2024-07-13**</sup>             | My goal is to provide professional responses with high emotional intelligence to help solve various foreign trade-related issues.<br/>`polishing` `high-eq` `response` |
-| [Ducky Programming Assistant](https://chat-preview.lobehub.com/market?agent=rubber-duck-programming)<br/><sup>By **[JiyuShao](https://github.com/JiyuShao)** on **2024-07-10**</sup>            | Ducky Programming Assistant<br/>`programming`                                                                                                                          |
-| [B1 Level German Conversation Partner](https://chat-preview.lobehub.com/market?agent=deutsche-b-1)<br/><sup>By **[tayhe](https://github.com/tayhe)** on **2024-07-08**</sup>                    | Provides fluent German conversation partners for B1 level learners<br/>`language-exchange` `learning-support` `education` `german-learning`                            |
+| Recent Submits                                                                                                                                                                   | Description                                                                                                                                                                                                                                                                                                         |
+| -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [RO-SCIRAW Prompt Word Expert](https://chat-preview.lobehub.com/market?agent=rosciraw)<br/><sup>By **[kirklin](https://github.com/kirklin)** on **2024-08-06**</sup>             | The RO-SCIRAW framework, created by Kirk Lin, is a methodology for prompt words that provides a new paradigm for building highly precise and efficient prompt words. Please enter the information for the persona you want to create.<br/>`prompt-word-framework`                                                   |
+| [Social Media Sage](https://chat-preview.lobehub.com/market?agent=social-media-sage)<br/><sup>By **[thedivergentai](https://github.com/thedivergentai)** on **2024-08-06**</sup> | Social Media Marketing expert crafting winning strategies for brands and empowering businesses to thrive online<br/>`social-media-marketing` `branding` `growth-strategies`                                                                                                                                         |
+| [Omnipedia](https://chat-preview.lobehub.com/market?agent=omnipedia)<br/><sup>By **[thedivergentai](https://github.com/thedivergentai)** on **2024-08-02**</sup>                 | Expert in providing high-quality, well-researched information on various topics, including history, science, literature, art, and more. Skilled in summarizing complex topics, assisting with research tasks, and offering creative prompts<br/>`artificial-intelligence` `information` `education` `communication` |
+| [Code Snark Master](https://chat-preview.lobehub.com/market?agent=code-snark-master)<br/><sup>By **[leter](https://github.com/leter)** on **2024-07-29**</sup>                   | Specializes in sharp criticism of code, sarcastically pointing out inefficiencies and readability issues<br/>`tech-leadership` `code-review` `sarcastic-style` `programming-consultation`                                                                                                                           |
 
-> 📊 Total agents: [<kbd>**298**</kbd> ](https://github.com/lobehub/lobe-chat-agents)
+> 📊 Total agents: [<kbd>**312**</kbd> ](https://github.com/lobehub/lobe-chat-agents)
 
  <!-- AGENT LIST -->
 

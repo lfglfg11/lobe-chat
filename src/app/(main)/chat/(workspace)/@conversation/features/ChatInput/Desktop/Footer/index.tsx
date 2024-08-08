@@ -68,7 +68,7 @@ const Footer = memo<FooterProps>(({ setExpand }) => {
     preferenceSelectors.useCmdEnterToSend(s),
     modelProviderSelectors.isModelEnabledUpload(model)(s),
   ]);
-  
+
   const sendMessage = useSendMessage();
   const cmdEnter = (
     <Flexbox gap={2} horizontal>

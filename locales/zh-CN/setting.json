@@ -51,7 +51,7 @@
     },
     "checker": {
       "button": "检查",
-      "desc": "测试 Api Key 与代理地址是否正确填写",
+      "desc": "测试 API Key 与代理地址是否正确填写",
       "pass": "检查通过",
       "title": "连通性检查"
     },
@@ -210,12 +210,6 @@
     },
     "model": {
       "desc": "{{provider}} 模型",
-      "list": {
-        "gpt-3.5-turbo": "GPT 3.5",
-        "gpt-3.5-turbo-16k": "GPT 3.5 (16K)",
-        "gpt-4": "GPT 4",
-        "gpt-4-32k": "GPT 4 (32K)"
-      },
       "title": "模型"
     },
     "presencePenalty": {

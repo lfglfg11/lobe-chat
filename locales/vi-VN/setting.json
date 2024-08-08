@@ -51,7 +51,7 @@
     },
     "checker": {
       "button": "Kiểm tra",
-      "desc": "Kiểm tra xem Api Key và địa chỉ proxy đã được điền đúng chưa",
+      "desc": "Kiểm tra xem API Key và địa chỉ proxy đã được điền đúng chưa",
       "pass": "Kiểm tra thành công",
       "title": "Kiểm tra kết nối"
     },
@@ -210,12 +210,6 @@
     },
     "model": {
       "desc": "Mô hình {{provider}}",
-      "list": {
-        "gpt-3.5-turbo": "GPT 3.5",
-        "gpt-3.5-turbo-16k": "GPT 3.5 (16K)",
-        "gpt-4": "GPT 4",
-        "gpt-4-32k": "GPT 4 (32K)"
-      },
       "title": "Mô hình"
     },
     "presencePenalty": {

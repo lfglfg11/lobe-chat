@@ -19,7 +19,7 @@ const ZeroOne: ModelProviderCard = {
     {
       description:
         '在 yi-large 模型的基础上支持并强化了工具调用的能力，适用于各种需要搭建 agent 或 workflow 的业务场景。',
-      displayName: 'Yi Large FC',
+      displayName: '零一万物（Function）',
       enabled: true,
       functionCall: true,
       id: 'yi-large-fc',

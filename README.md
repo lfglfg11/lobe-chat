@@ -1,6 +1,6 @@
 # lobe chat
 
-本版本适配 [free-api](https://github.com/LLM-Red-Team) 全系列 ，并且同步最新的[lobe-chat](https://lobehub.com/zh/docs/self-hosting/environment-variables)版本，并且适配支持free-api和gpt-4-all等逆向模型上传文件的功能！
+本版本适配 [free-api](https://github.com/LLM-Red-Team) 全系列 ，并且同步最新的[lobe-chat](https://lobehub.com/zh/docs/self-hosting/environment-variables)版本(由于Lobe Chat 最新版，需使用向量模型，不能直接上传文件，所以不在继续更新)，适配支持free-api和gpt-4-all等逆向模型上传文件的功能！
 
 ## 效果
 ![image](https://github.com/user-attachments/assets/aa4f7ea8-dead-4eda-965e-c71d37b31cd4)

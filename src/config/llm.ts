@@ -153,7 +153,7 @@ export const getLLMConfig = () => {
       AWS_ACCESS_KEY_ID: process.env.AWS_ACCESS_KEY_ID,
       AWS_SECRET_ACCESS_KEY: process.env.AWS_SECRET_ACCESS_KEY,
 
-      const ENABLED_OLLAMA = process.env.ENABLED_OLLAMA !== '0' && Boolean(process.env.OLLAMA_PROXY_URL),
+      ENABLED_OLLAMA: process.env.ENABLED_OLLAMA !== '0' && Boolean(process.env.OLLAMA_PROXY_URL),
       OLLAMA_PROXY_URL: process.env.OLLAMA_PROXY_URL || '',
       OLLAMA_MODEL_LIST: process.env.OLLAMA_MODEL_LIST,
 

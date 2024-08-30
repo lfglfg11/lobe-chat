@@ -121,10 +121,17 @@ const OpenAI: ModelProviderCard = {
       vision: true,
     },
     {
+      displayName: 'GPT-4o-Mini',
+      enabled: true,
+      functionCall: true,
+      id: 'gpt-4o-mini',
+      tokens: 128_000,
+    },
+    {
       displayName: 'GPT-4o（MINI）',
       enabled: true,
       functionCall: false,
-      id: 'gpt-4o-mini',
+      id: 'gpt-4oo-mini',
       tokens: 32_768,
     },
     {

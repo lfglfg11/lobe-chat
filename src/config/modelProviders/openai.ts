@@ -135,7 +135,7 @@ const OpenAI: ModelProviderCard = {
       tokens: 32_768,
     },
     {
-      displayName: 'GPT-4o',
+      displayName: 'GPT-4o (官方)',
       enabled: true,
       functionCall: true,
       id: 'gpt-4o',

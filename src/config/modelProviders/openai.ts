@@ -121,7 +121,7 @@ const OpenAI: ModelProviderCard = {
       vision: true,
     },
     {
-      displayName: 'GPT-4o-Mini',
+      displayName: 'GPT-4o-Mini（官方）',
       enabled: true,
       functionCall: true,
       id: 'gpt-4o-mini',
@@ -137,7 +137,7 @@ const OpenAI: ModelProviderCard = {
       vision: true,
     },
     {
-      displayName: 'GPT-4o',
+      displayName: 'GPT-4o（官方）',
       enabled: true,
       functionCall: true,
       id: 'gpt-4o',
@@ -152,13 +152,6 @@ const OpenAI: ModelProviderCard = {
       id: 'gpt-4o-all',
       tokens: 32_768,
       vision: true,
-    },
-    {
-      description: 'GPT-4 Turbo 视觉版 (240409)',
-      displayName: 'GPT-4 Turbo Vision (240409)',
-      functionCall: true,
-      id: 'gpt-3.5-turbo-0125',
-      tokens: 16_385,
     },
     {
       displayName: '阶跃星辰（联网）',

@@ -150,6 +150,7 @@ const OpenAI: ModelProviderCard = {
       displayName: '阿里官方视觉',
       enabled: true,
       files: true,
+      functionCall: false,
       id: 'Qwen/Qwen2-VL-72B-Instruct',
       tokens: 32_768,
       vision: true,
